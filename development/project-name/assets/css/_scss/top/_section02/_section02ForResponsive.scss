@@ -1,0 +1,437 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------------------------------------
+*
+*   section02
+*
+-------------------------------------------------------------------------------- */
+#top .section02 {
+
+  /*
+  *
+  *   media query   
+  *
+  */
+  // 768??
+  @media only screen and (max-width: $maxBpSP) {
+
+    // min-height: 735px;
+    position: static;
+    height: auto;
+
+    /*
+    *
+    *   textWrap
+    *
+    */
+    .textWrap {
+
+      // position: absolute;
+      // left: 50%;
+      // transform: translateX(-50%);
+      // top: 70px;
+      // width: 100%;
+      // padding: 0 25px;
+      position: static !important;
+      box-sizing: border-box;
+      width: 375px;
+      padding: 70px 25px 0;
+
+      
+      .tit {
+        margin-top: 9px;
+        margin-bottom: 12px;
+      }
+
+      .text {
+        margin-bottom: 25px;
+      }
+      
+      .text img {
+        width: 325px;
+        height: 11px;
+      }
+
+      .play {
+        width: 330px;
+        box-sizing: border-box;
+        
+        margin-bottom: 34px;
+        padding: 18px 20px 17px;
+        
+      }
+
+    }
+
+    /*
+    *
+    *   sec02Video
+    *
+    */
+
+    // #sec02Video {
+    //   display: none;
+      
+    // }
+    
+    #sec02VideoWrap {
+      position: absolute;
+      left: 0;
+      top: 0;
+      // width: 100%;
+      height: 100%;
+      
+      z-index: 1;
+      
+      overflow: hidden;
+      width: 0;
+    }
+
+    .next {
+      text-align: center;
+      margin-top: 35px;
+      
+      position: static;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(0);
+    }
+
+    .nextLink {display: block;}
+
+    // sns
+    .snsWrap {
+      height: 60px;
+      width: 0;
+      // width: 330px;
+      background-color: #000;
+      
+      position: absolute;
+      top: 608px;
+      left: 0;
+    }
+    .sns.sp {
+      display: block;
+      height: 100%;
+    
+      .iconShare {
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+      }
+
+      .bar {
+
+        display: none;
+        
+        position: absolute;
+        bottom: 31px;
+        left: 57px;
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+      }
+
+      .list {
+
+        display: none;
+        
+        position: absolute;
+        left: 116px;
+        bottom: 18px;
+        width: 185px;
+        
+        .item {
+          margin-right: 36px;
+        }
+
+        .item:nth-child(1) svg {
+          width: 12px;
+          height: 24px;
+        }
+        .item:nth-child(2) {
+          position: relative;
+          top: 3px;
+        }
+        .item:nth-child(2) svg {
+          width: 23px;
+          height: 20px;
+        }
+        .item:nth-child(3) {
+          position: relative;
+              top: 6px;
+        }
+        .item:nth-child(3) svg {
+          width: 20px;
+          height: 14px;
+        }
+        .item:nth-child(4) {
+          position: relative;
+          top: 4px;
+        }
+        .item:nth-child(4) svg {
+          width: 21px;
+          height: 20px;
+        }
+        
+      }
+
+    }
+    
+    // indicator
+    .indicator {
+      position: absolute;      
+      right: 23px;
+      top: 630px;
+      
+      img {
+        width: 18px;
+        height: 19px;
+      }
+
+      .current {
+        font-size: 22px;
+        position: absolute;
+        top: -16px;
+        left: -2px;
+      }
+      .total {
+        font-size: 13px;
+        position: absolute;
+        bottom: 1px;
+        right: -3px;
+      }
+    }
+
+  }
+
+  // 320??
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768??
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    overflow: hidden;
+    
+    .snsWrap {display: none;}
+    .indicator {display: none;}
+
+    /*
+    *
+    *   textWrap
+    *
+    */
+
+    .textWrap {
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+
+      transform-origin: 0 50%;
+      width: 88%;
+      
+
+      .subTit {
+
+        margin-bottom: 36px;
+        
+        img {
+          width: 150px;
+          height: auto;
+        }
+        img:nth-child(1) {
+          margin-right: 18px;
+        }
+      }
+
+      .bar {
+        width: 70px;
+      }
+
+      .tit {
+        margin-top: 35px;
+        font-size: 88px;
+        width: 1050px;
+        margin-bottom: 25px;
+        
+        br.pc {
+          display: block;
+        }
+        br.sp {
+          display: none;
+        }
+
+      }
+
+      .text {margin-bottom: 35px;}
+
+      .play {
+        font-size: 16px;
+        padding: 21px 26px;
+        width: 240px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        
+        .bg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255,255,255,1);
+          opacity: 0;
+        }
+      }
+
+      .details {
+        display: none;
+      }
+
+    }
+
+    /*
+    *
+    *   row
+    *
+    */
+    
+    .row {
+
+      position: relative;
+      width: 200%;
+      left: -740px;
+      
+      .item {
+        width: 260px;
+        height: 145px;
+        background-color: pink;
+        
+        border: 1px solid #000;
+        box-sizing: borer-box;
+      }
+
+      .videoTile {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .row01 {left: -700px;}
+    .row02 {left: -640px;}
+    .row03 {left: -530px;}
+    .row04 {left: -580px;}
+    .row05 {left: -640px;}
+    .row06 {left: -520px;}
+
+
+    /*
+    *
+    *   sec02Video
+    *
+    */
+
+    #sec02VideoWrap {
+      position: absolute;
+      left: 0;
+      top: 0;
+      // width: 100%;
+      height: 100%;
+      
+      z-index: 1;
+      
+      overflow: hidden;
+      width: 0;
+    }
+
+    /*
+    *
+    *   next
+    *
+    */
+    .next {
+      
+      display: none;
+
+    }
+
+   
+  }
+
+  // メインタイトル
+  @media only screen and (min-width: $maxBpSP + 1) and (max-width: 1180px) , screen and (min-width: $maxBpSP + 1) and (max-height: 650px) {
+
+    /*
+    *
+    *   textWrap
+    *
+    */
+
+    .textWrap {
+
+      .subTit {
+
+        margin-bottom: 25px;
+        
+        img {
+          width: 105px;
+          height: auto;
+        }
+        img:nth-child(1) {
+          margin-right: 11px;
+        }
+      }
+
+      .bar {
+        width: 49px;
+      }
+
+      .tit {
+        margin-top: 24px;
+        margin-bottom: 17px;
+        font-size: 61px;
+        width: 735px;
+
+      }
+
+      .text {
+        margin-bottom: 24px;
+        
+        img {
+          width: 514px;
+          height: auto;
+        }
+        
+      }
+
+      .play {
+        font-size: 11px;
+        width: 168px;
+        padding: 14px 18px;
+        
+      }
+
+    }
+
+  }
+
+  // 1281??
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

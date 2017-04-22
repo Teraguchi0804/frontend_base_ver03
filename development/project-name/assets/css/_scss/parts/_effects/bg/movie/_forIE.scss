@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   blend mode
+*
+-------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------
+*
+*   movie bg
+*
+-------------------------------------------------------------------------------- */
+.not-mix-blend-mode body.movie #bgWrap {
+
+  .sec02 {
+
+    /*
+    *
+    *   overlay
+    *
+    */
+    .overlay.blue {
+
+      background-color: #81d8d0;
+      opacity: 0.35;
+
+    }
+
+  }
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+  
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .sec02 {
+    
+ 
+      /*
+      *
+      *   overlay
+      *
+      */
+      .overlay.blue {
+
+        background-color: #81d8d0;
+        opacity: 0.35;
+        
+      }
+
+    }
+
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

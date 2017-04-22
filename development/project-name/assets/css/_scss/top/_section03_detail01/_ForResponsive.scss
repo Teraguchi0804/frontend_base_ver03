@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section03_detail01
+*
+-------------------------------------------------------------------------------- */
+#top .section03_detail01 {
+
+
+  /* --------------------------------------------------------------------------------
+  *
+  *   media query
+  *
+  -------------------------------------------------------------------------------- */
+ 
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+
+    /* --------------------------------------------------------------------------------
+    *
+    *   block01
+    *
+    -------------------------------------------------------------------------------- */
+    .block01 {
+
+
+      .tit {
+        
+        width: 340px;
+        height: 200px;
+        padding: 25px 0 19px 25px;
+
+      }
+
+
+    }
+
+    /* --------------------------------------------------------------------------------
+    *
+    *   block02
+    *
+    -------------------------------------------------------------------------------- */
+    .block02 {
+
+      .imgWrap01 {
+        
+        img {
+          width: 270px;
+          height: 180px;
+        }
+        
+      }
+
+      .imgWrap02 {
+        
+        img {
+          width: 165px;
+          height: 110px;
+        }
+
+      }
+
+
+      .text02 {
+        margin-bottom: 38px;
+      }
+
+      .imgWrap03 {
+        height: 220px;
+        margin-bottom: 38px;
+        
+        .imgInner {
+          position: absolute;
+          left: calc(50% + 22px);
+          transform: translateX(-50%);
+          
+          margin-top: 0;
+          
+          .bg {
+            width: 328px;
+            height: 200px;
+            
+            position: absolute;
+            z-index: 1;
+            top: 25px;
+            left: -15px;
+            background-color: #81d8d0;
+          }
+        }
+
+        img {
+          width: 330px;
+          height: 220px;
+        }
+
+      }
+
+      .text03 {
+        margin-bottom: 92px;
+      }
+
+      .imgWrapMid {
+        margin-bottom: 40px;
+      }
+
+      .blockInner02 {      
+
+        .text04 {
+          margin-bottom: 36px;
+        }
+
+        .imgWrap04 {
+          height: 200px;
+          margin-bottom: 40px;
+          
+          .imgInner {
+            
+            position: absolute;
+            left: calc(50% + 9px);
+            transform: translateX(-50%) !important;
+            
+            .bg {
+              position: absolute;
+              z-index: 1;
+              background-color: #81d8d0;
+              width: 300px;
+              height: 160px;
+              left: 57px;
+              top: 45px;
+            }
+
+            img {
+              position: relative;
+              z-index: 2;
+              
+              width: 300px;
+              height: 200px;
+            }
+          }
+
+        }
+
+        .text05 {
+          margin-bottom: 110px;
+        }
+        
+      }
+
+    }
+
+    .block03 {
+      
+      .blockInner01 {
+
+        .img {
+          width: 275px;
+          height: 275px;
+        }
+        .insta {
+          width: 80px;
+          height: 80px;
+        }
+        
+      }
+    }
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    /* --------------------------------------------------------------------------------
+    *
+    *   block02
+    *
+    -------------------------------------------------------------------------------- */
+    .block02 {
+
+      .imgWrap01 {
+
+        .imgInner {
+          width: 540px;
+          height: 360px;
+          
+          img {position: absolute;}
+        }
+          
+        .imgInner .bg {
+          width: 520px;
+          height: 340px;
+          right: -10px;
+          top: 70px;
+        }
+
+      }
+
+      .imgWrap02 {
+        
+        img {
+          top: 30px;
+          left: calc(50% + 180px);
+          margin-top: 0;
+        }
+      }
+
+      .tit01 {
+        left: calc(50% - 354px);
+        top: 46px;
+      }
+
+      .text02 {
+        top: 195px;
+        left: calc(50% - 340px);
+      }
+
+      .imgWrap03 {
+        
+        height: 400px;
+        margin-bottom: 200px;
+        
+        .imgInner {
+          top: 0;
+          left: calc(50% - 220px);
+          margin: 0;
+          
+          .bg {
+            width: 600px;
+            height: 360px;
+            left: -20px;
+            top: 80px;
+          }
+        }
+        
+      }
+
+      .text03 {
+        position: absolute;
+        top: 773px;
+        width: 300px;
+        left: calc(50% + 165px);
+        transform: translateX(-50%);
+      }
+
+      .blockInner02 {
+
+        .tit02 {
+          line-height: 1.53;
+          top: 150px;
+          left: calc(50% - 337px);
+        }
+
+        .text04 {
+          left: calc(50% - 329px);
+          top: 301px;
+          width: 359px;
+        }
+
+        .text05 {
+          width: 795px;
+          left: calc(50% - 0px);
+          top: 618px;
+        }
+        
+        .imgWrap04 {
+          position: static;
+          height: 360px;
+          padding-top: 100px;
+          padding-bottom: 458px;
+          
+          margin: 0;
+          padding: 0;
+          transform: none;
+          
+          .imgInner {
+            position: absolute;
+            left: calc(50% + 230px);
+            transform: translateX(-50%);
+            
+            .bg {
+              width: 510px;
+              height: 345px;
+              position: absolute;
+              background-color: #81d8d0;
+              z-index: 1;
+              right: -10px;
+              top: 40px;
+            }
+
+            img {
+              position: relative;
+              z-index: 2;
+              
+              right: 0;
+              margin-left: 0;
+              transform: none;
+            }
+          }
+        }
+      }
+
+    }
+
+   
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}
+
+
+
+

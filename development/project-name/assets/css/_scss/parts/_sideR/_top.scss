@@ -1,0 +1,56 @@
+/* --------------------------------------------------------------------------------
+*
+*   sideR
+*
+-------------------------------------------------------------------------------- */
+
+body.top #sideR {
+
+  /*
+  *
+  *   tit
+  *
+  */
+  .tit {
+    display: none;
+  }
+
+  /*
+  *
+  *   next
+  *
+  */
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    transform-origin: 100% 100% !important;
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+
+}

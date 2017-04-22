@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------------------------------------
+*
+*   section03_detail sss
+*
+-------------------------------------------------------------------------------- */
+
+#top .section03_detail {
+
+  /* --------------------------------------------------------------------------------
+  *
+  *   media query
+  *
+  -------------------------------------------------------------------------------- */
+ 
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) { 
+  
+
+    .block03 {
+      
+      .thumb img {
+        width: 275px;
+        height: 183px;
+      }
+
+      .blockInner01 .img {
+        width: 275px;
+        height: 275px;
+      }
+      .blockInner01 .insta {
+        width: 80px;
+        height: 80px;
+      }
+
+    }
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    /* --------------------------------------------------------------------------------
+    *
+    *   block03
+    *
+    -------------------------------------------------------------------------------- */
+    .block03 {
+      padding-top: 120px;
+      
+      .blockInnerWrap {
+
+        width: 800px;
+        margin: 0 auto;
+
+        // cf
+        zoom:1;
+        &:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+      }
+
+      .blockInnerWrap01 {
+
+        margin-bottom: 120px;
+
+        .blockInner01 {
+          width: 360px;
+          float: right;
+          
+          .img {
+            width: 100%;
+            height: auto;
+          }
+          .insta {
+            width: 100px;
+            height: 100px;
+            
+            top: -50px;
+            right: 1px;
+          }
+        }
+        .blockInner02 {
+          width: 360px;
+          float: left;
+          
+          padding-top: 8px;
+          
+          .text01 {
+            font-size: 20px;
+            line-height: 1.5;
+            padding: 0;
+            letter-spacing: 0.03em;
+          }
+          .text02,.text03,.text04 {
+            font-size: 14px;
+            line-height: 1.71;
+            padding: 24px 0 0;
+            letter-spacing: 0.03em;
+          }
+          .text02 {
+            padding-top: 14px;
+          }
+          .text05 {
+            line-height: 1.71;
+            letter-spacing: .03em;
+            font-size: 16px;
+            width: 230px;
+            /* height: 60px; */
+            box-sizing: border-box;
+            padding: 15px 0 16px;
+            margin: 20px 0 4px;
+            
+            span {
+              text-decoration: none;
+              background: url(/project-name/assets/resource/svg/icon_blank.svg) no-repeat;
+              background-position: 99% 8px;
+              background-size: 10px;
+            }
+          }
+        }
+      }
+
+      .blockInnerWrap02 {
+
+        margin-bottom: 150px;
+        
+        .blockInner01 {
+          float: left;
+          width: 360px;
+          
+          .thumb {
+            margin: 0;
+            
+            img {
+            width: 360px;
+            height: auto;
+            }
+          }
+          
+
+        }
+        .blockInner02 {
+          float: right;
+          width: 370px;
+          padding-top: 5px;
+          
+          .position {
+            font-size: 20px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            margin-bottom: 6px;
+          }
+          .name {
+            font-size: 30px;
+            text-align: left;
+            letter-spacing: 0.03em;
+            margin-bottom: 20px;
+          }
+
+          .text {
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            margin: 0;
+          }
+        }
+      }
+
+      .details {
+        width: 800px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding-top: 28px;
+        padding: 0;
+        padding-top: 28px;
+        padding-bottom: 155px;
+        
+        p {
+          display: inline;
+        }
+        .name02 {
+          padding-left: 5px;
+        }
+      }
+
+    }
+   
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}
+

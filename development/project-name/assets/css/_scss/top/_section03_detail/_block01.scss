@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------------------------------------
+*
+*   section03_detail sss
+*
+-------------------------------------------------------------------------------- */
+
+#top .section03_detail {
+
+  /* --------------------------------------------------------------------------------
+  *
+  *   block01
+  *
+  -------------------------------------------------------------------------------- */
+  .block01 {
+
+    position: relative;
+    z-index: 1;
+    
+    .mv {
+      
+      .text {
+        position: absolute;
+        top: 108px;
+        right: -16px;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        transform: rotate(-90deg) translate3d(0,0,1px);
+        
+        @extend %cormorant;
+      }
+
+    }
+
+    .tit {
+      
+      position: absolute;
+      
+      background-color: #81d8d0;
+      box-sizing: border-box;
+      bottom: -135px;
+      width: 340px;
+      height: 200px;
+      padding: 25px 20px 19px 25px;
+      
+      .numWrap {
+        @extend %roboto;
+        
+        font-size: 13px;
+        letter-spacing: .05em;
+        font-size: 10px;
+        margin-bottom: 7px;
+        
+        p {
+          margin-bottom: 4px;
+        }
+        
+        .bar {
+          width: 6px;
+          height: 1px;
+          background-color: #000;
+        }
+      }
+
+      .sns {
+        display: none;
+        
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        img {
+          padding: 13px;
+          border-left: 1px solid #000;
+          border-bottom: 1px solid #000;
+        }
+      }
+
+      .position {
+        @extend %cormorant;
+        
+        font-size: 15px;
+        letter-spacing: 0em;
+        font-style: italic;
+        margin-bottom: 8px;
+        
+        position: relative;
+        z-index: 1;
+      }
+      .name {
+        @extend %cormorant;
+        
+        font-size: 28px;
+        letter-spacing: 0em;
+        margin-bottom: 17px;
+        
+        position: relative;
+        z-index: 1;
+      }
+
+      .detail {
+        font-size: 13px;
+        letter-spacing: 0em;
+        line-height: 1.61;
+      }
+
+
+    }
+
+
+  }
+
+}

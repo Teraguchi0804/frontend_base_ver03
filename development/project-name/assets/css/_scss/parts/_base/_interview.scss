@@ -1,0 +1,42 @@
+/* --------------------------------------------------------------------------------
+*
+*   interview
+*
+-------------------------------------------------------------------------------- */
+body.interview {
+  
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    // overflow: visible;
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    #wrapper {
+      display: none;
+    }
+
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+  }
+
+}

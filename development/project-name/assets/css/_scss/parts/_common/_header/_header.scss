@@ -1,0 +1,158 @@
+/* --------------------------------------------------------------------------------
+*
+*   header
+*
+-------------------------------------------------------------------------------- */
+#header {
+
+  position: fixed;
+  z-index: z(header);
+  
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+  .logo {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    
+    opacity: 0;
+    
+    svg {
+      position: absolute;
+      
+      width: 89px;
+      height: 14px;
+    }
+
+    .text {
+      color: #fff;
+      font-size: 9px;
+      letter-spacing: 0.05em;
+      position: absolute;
+      top: 22px;
+      left: 1px;
+      
+      opacity: 0.6;
+      @extend %cormorant;
+      
+      // display: none;
+
+    }
+    // img {
+    //   position: absolute;
+      
+    //   width: 89px;
+    //   height: 14px;
+    // }
+  }
+
+  .subTit {
+    opacity: 0;
+  }
+
+  .menuBtn01 {
+    position: absolute;
+    top: 4px;
+    right: 14px;
+    
+    cursor: pointer;
+    
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    .subTit {
+      
+      display: none !important;
+      
+    }
+  
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .logo {
+      
+      top: 33px;
+      left: 40px;
+      
+      // img {
+      //   width: 144px;
+      //   height: auto;
+      // }
+      svg {
+        width: 144px;
+        height: 22px;
+      }
+
+
+      .text {
+        top: 35px;
+        font-size: 14px;
+        letter-spacing: .02em;
+      }
+    
+    }
+    
+    .subTit {
+      font-size: 0;
+      
+      position: absolute;
+      left: 223px;
+      top: 39px;
+      
+      svg {
+        width: 120px;
+        height: 18px;
+      }
+      svg:nth-child(1) {
+        margin-right: 14px;
+        
+        .cls-1 {
+          fill: #fff;
+          fill-rule: evenodd;
+        }
+      }
+      svg:nth-child(2) {        
+        .cls-1 {
+          fill: #81d8d0;
+          fill-rule: evenodd;
+        }
+      }
+    }
+
+    .menuBtn01 {
+      
+      top: 26px;
+      right: 35px;
+      
+    }
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   blend mode
+*
+-------------------------------------------------------------------------------- */
+
+.not-mix-blend-mode .section03 {
+  
+
+  /*
+  *
+  *   box02
+  *
+  */
+  .box02 {
+    
+    .titWrap {
+            
+      .rectBg {
+
+        background-color: #81d8d0;
+        opacity: 0.35;
+
+      }            // fill-rule: evenodd;
+
+    }
+
+  }
+
+  /*
+  *
+  *   box03
+  *
+  */
+  .box03 {
+    
+    .titWrap {
+
+      .rectBg {
+        background-color: #81d8d0;
+        opacity: 0.35;
+        
+      }
+    }
+
+  }
+  /*
+  *
+  *   box04
+  *
+  */
+  .box04 {
+    
+    .titWrap {
+      
+      .rectBg {
+        background-color: #81d8d0;
+        opacity: 0.35;
+      }
+    }
+
+  }
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+   
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

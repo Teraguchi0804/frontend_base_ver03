@@ -1,0 +1,136 @@
+/* --------------------------------------------------------------------------------
+*
+*   sideR
+*
+-------------------------------------------------------------------------------- */
+
+body.interview_detail #sideR {
+
+  position: absolute;
+  
+  /*
+  *
+  *   back
+  *
+  */
+  .back {
+    
+    @extend %roboto;
+    // display: block;
+
+  }
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    .back {display: none;}
+    display: none !important;
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    /*
+    *
+    *   back
+    *
+    */
+    .back {
+
+      position: absolute;
+      top: 108px;
+      right: 0;
+      
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      
+      width: 120px;
+      height: 20px;
+      
+      span {
+        position: absolute;
+        top: -6px;
+        right: 73px;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .bar {
+        width: 70px;
+        height: 1px;
+        background-color: #fff;
+        
+        position: absolute;
+        right: 0px;
+        top: 10px;
+      }
+
+    }
+    
+    /*
+    *
+    *   tit
+    *
+    */
+    .tit {
+      top: 239px;
+      right: -3px;
+      
+      font-size: 24px;
+      
+      display: none;
+    }
+
+    /*
+    *
+    *   indicator
+    *
+    */
+    .indicator {
+
+      display: none;
+      
+    }
+
+    /*
+    *
+    *   next
+    *
+    */
+    .next {
+
+      color: #000;
+      right: 32px;
+      top: 710px;
+      bottom: auto;
+      
+      svg path {
+        fill: #000;  
+      }
+
+    }
+
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+
+}

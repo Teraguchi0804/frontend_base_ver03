@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section04 sss
+*
+-------------------------------------------------------------------------------- */
+#top .section04 {
+
+  /* --------------------------------------------------------------------------------
+  *
+  *   block02
+  *
+  -------------------------------------------------------------------------------- */
+  .block02 {
+    
+    background-color: #fff;
+    padding-top: 118px;
+    
+    overflow: hidden;
+    
+
+    /*
+    *
+    *   year
+    *
+    */
+    .year {
+      position: absolute;
+      
+      font-size: 150px;
+      letter-spacing: 0.06em;
+      color: #eeeeee;
+      @extend %cormorant;
+      z-index: 1;
+    }
+
+    .year01 {
+      top: 417px;
+      left: -28px;
+    }
+
+    .year02 {
+      top: 1379px;
+      right: -13px;
+      left: auto;
+      display: none;
+    }
+
+    .year03 {
+      top: 3360px;
+      left: -14px;
+    }
+
+    /*
+    *
+    *   tit
+    *
+    */
+    .tit {
+      @extend %cormorant;
+      z-index: 2;
+      position: relative;
+    }
+
+    .tit01,
+    .tit03 {
+      padding: 0px 25px;
+      margin-bottom: 23px;
+      
+      font-size: 30px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+
+    .tit03 {
+      margin-bottom: 30px;
+    }
+
+    .tit02,
+    .tit04 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      padding: 0 25px;
+      line-height: 1.55;
+      letter-spacing: 0.03em;
+      font-family: 'ヒラギノ明朝 Pro W6', 'Hiragino Mincho Pro';
+    }
+
+    /*
+    *
+    *   text
+    *
+    */    
+    .text {
+      letter-spacing: 0em;
+      line-height: 1.53;
+      padding: 0 25px;
+      
+      margin-bottom: 22px;
+      // font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3';
+      
+      position: relative;
+      z-index: 2;
+    }
+
+    .text02 {
+      margin-bottom: 55px;
+    }
+
+    .text05 {
+      margin-bottom: 124px;
+    }
+
+    .text10 {
+      margin-bottom: 75px;
+    }
+
+    .textWrap02 {
+      margin-bottom: 42px;
+    }
+
+    .textWrap04 {
+      margin-bottom: 100px;
+    }
+
+
+    /*
+    *
+    *   imgWrap
+    *
+    */
+
+    .imgWrap01 {
+      height: 270px;
+      z-index: 2;
+      margin-bottom: 45px;
+      
+      .imgInner {
+        position: absolute;
+        left: calc(50% + 97px);
+        transform: translateX(-50%);
+        
+        .bg {
+          position: absolute;
+          width: 180px;
+          height: 270px;
+          top: 25px;
+          right: 10px;
+          background-color: #81d8d0;
+          z-index: 1;
+        }
+
+        img {
+          z-index: 2;
+          position: relative;
+        }
+      }
+    }
+
+    .imgWrap02 {
+      position: relative;
+      z-index: 2;
+      height: 160px;
+      
+      img {
+        position: absolute;
+        left: calc(50% - 68px);
+        transform: translateX(-50%);
+      }
+
+      span {
+        position: absolute;
+        bottom: -23px;
+        left: calc(50% - 141px);
+        transform: translateX(-50%);
+        font-size: 9px;
+        letter-spacing: 0em;
+        
+        // font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3';
+      }
+    }
+
+    .imgWrap03 {
+      height: 130px;
+      margin-bottom: 110px;
+      
+      .imgInner {
+        position: absolute;
+        left: calc(50% + 65px);
+        transform: translateX(-50%);
+        margin-top: -10px;
+        z-index: 2;
+        
+        .bg {
+          position: absolute;
+          width: 195px;
+          height: 130px;
+          top: 5px;
+          right: -10px;
+          background-color: #81d8d0;
+          z-index: 1;
+        }
+
+        img {
+          z-index: 2;
+          position: relative;
+        }
+      }
+    }
+
+    .imgWrap04 {
+
+      height: 300px;
+      margin-bottom: 41px;
+
+      .imgInner {
+        position: absolute;
+        left: calc(50% - 63px);
+        transform: translateX(-50%);
+      }
+
+      .bg {
+        width: 170px;
+        height: 285px;
+        position: absolute;
+        z-index: 1;
+        top: 35px;
+        left: -10px;
+        background-color: #81d8d0;
+      }
+      
+      img {
+        position: relative;
+        z-index: 2;
+      }
+
+      span {
+        font-size: 9px;
+        position: absolute;
+        bottom: -17px;
+        width: 140px;
+        left: 73px;
+        letter-spacing: 0;
+        z-index: 2;
+      }
+    }
+
+    /*
+    *
+    *   yearMid
+    *
+    */
+
+    .yearMid {
+
+      opacity: 0;
+
+      margin-bottom: 125px;
+      
+      .bar {
+        width: 1px;
+        height: 60px;
+        background-color: #000;
+        margin: 0 auto;
+      }
+
+      .year04 {
+        font-size: 175px;
+        color: #81d8d0;
+        
+        line-height: 1;
+        margin-top: -25px;
+        margin-bottom: 40px;
+        
+        @extend %cormorant;
+      }
+
+    }
+    
+    .imgWrap05 {
+      @extend %cf; 
+      margin-bottom: 35px;
+      
+      .imgInner {
+        text-align: center;
+        
+        .bg {
+          position: absolute;
+          z-index: 1;
+          bottom: -5px;
+          left: calc(50% - 119px);
+          width: 150px;
+          height: 275px;
+          background-color: #81d8d0;
+        }
+
+        img {
+          z-index: 2;
+          position: relative;
+        }
+      }
+    }
+
+    /*
+    *
+    *   product
+    *
+    */
+    .product {
+
+      /*
+      *
+      *   slider
+      *
+      */
+      .sliderWrap {
+
+        margin-bottom: 15px;
+        
+        .slider {
+          text-align: center;
+        }
+
+        .slider {
+          height: 193px;
+          
+          img {
+            position: absolute;
+            left: 50%;
+            margin-left: -170px;
+            top: 0;
+            opacity: 0;
+          }
+          img:nth-child(1) {
+            opacity: 1;
+          }
+        }
+
+        .arrowWrap {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          
+          svg.sp {
+            width: 30px;
+            height: 9px;
+          }
+          svg path {
+            fill: #000;
+          }
+          
+          .arrowR {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -15px;
+            cursor: pointer;
+            transform: translate3d(0,0,1px);
+            padding: 10px 0;
+          }
+          .arrowL {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -15px;
+            cursor: pointer;
+            transform: translate3d(0,0,1px);
+            padding: 10px 0;
+          }
+        }
+
+      }
+        
+      /*
+      *
+      *   details
+      *
+      */
+      .details {
+        letter-spacing: 0.06em;
+        line-height: 1.36;
+        
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 11px;
+        height: 131px;
+        
+        .tit {
+          font-size: 16px;
+          margin-bottom: 5px;
+          letter-spacing: 0.06em;
+        }
+        .detail {
+          margin-bottom: 5px;
+        }
+        .price {
+          font-size: 13px;
+          color: #444444;
+          margin-bottom: 5px;
+        }
+        .detail, .price {
+          color: #666666;
+          font-family: 'ヒラギノ明朝 Pro W6', 'Hiragino Mincho Pro';
+          letter-spacing: 0.03em;
+          line-height: 1.45;
+        }
+        .productLink {
+          font-size: 13px;
+          letter-spacing: 0.03em;
+          text-decoration: underline;
+          color: #444444;
+        }
+      }
+
+      /*
+      *
+      *   indicator
+      *
+      */
+      .indicator {
+          
+        padding-bottom: 95px;
+        
+        .item {
+          width: 45px;          
+          
+          margin-right: 5px;
+          padding: 5px 0;
+          
+          cursor: pointer;
+          position: relative;
+          
+          height: 5px;
+          
+          span {
+            width: 100%;
+            display: block;
+            background-color: #cccccc;  
+            height: 2px;
+            
+            position: absolute;
+            bottom: 0;
+          }
+        }
+        .item.isActive {
+          
+          span {
+            width: 100%;
+            display: block;
+            background-color: #81d8d0;
+            height: 5px;
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}

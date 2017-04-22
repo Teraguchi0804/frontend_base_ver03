@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section04 sss
+*
+-------------------------------------------------------------------------------- */
+#top .section04 {
+
+  /* --------------------------------------------------------------------------------
+  *
+  *   media query
+  *
+  -------------------------------------------------------------------------------- */
+  
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    /*
+    *
+    *   block04
+    *
+    */
+    .block04 {
+      height: 240px;
+      
+      .pageTop {
+        right: 33px;
+        bottom: 108px;
+        
+        span {
+          font-size: 14px;
+          width: 80px !important;
+          top: 34px;
+          left: -44px;
+        }
+
+        svg {
+          position: absolute;
+          left: -5px;
+          top: -87px;
+          
+          path {
+            fill: #000;
+          }
+        }
+      }
+
+      .copy {
+        font-size: 10px;
+        line-height: 1.3;
+        
+        bottom: 40px;
+        left: 40px;
+      }
+    }
+
+   
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+
+}

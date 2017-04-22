@@ -1,0 +1,45 @@
+
+body.interview_detail #nav {
+  
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768??
+  @media only screen and (max-width: $maxBpSP) {
+
+
+  }
+
+  // 320??
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768??
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .list {
+
+      .item:nth-child(3) {
+        
+        .bar {
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+  // 1281??
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+    
+}

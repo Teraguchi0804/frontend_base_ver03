@@ -1,0 +1,436 @@
+/* --------------------------------------------------------------------------------
+*
+*   interview
+*
+-------------------------------------------------------------------------------- */
+body.interview #bgWrap {
+
+
+  .block {
+    
+    .ul .item {
+
+      .numWrap {
+
+        @extend %roboto;
+        
+      }
+
+      .box {
+
+        .position {
+          @extend %cormorant;
+
+        }
+        .name {
+          @extend %cormorant;
+        }
+        .comming {
+          @extend %cormorant;
+        }
+
+      }
+
+
+      .titWrap02 {
+        .position {
+          @extend %cormorant;
+
+        }
+        .name {
+          @extend %cormorant;
+        }
+        .read {
+          @extend %roboto;
+        }
+      }
+
+    }
+
+  }
+
+  /*
+  *
+  *   textWrap_pc
+  *
+  */
+  .textWrap_pc {
+    
+    @extend %cormorant;
+    
+  }
+  
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    .blockWrap {display: none;}
+    .textWrap_pc {display: none;}
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+  
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .sec03 {display: block;}
+
+    .sec03BgCanvas {
+      
+      //background: url(/project-name/assets/resource/img/interview/index/img_bg_pc.jpg) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+       
+    }
+
+    .blockWrap {
+      
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    /*
+    *
+    *   block
+    *
+    */
+
+    .block {
+
+      display: block;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 1070px;
+      
+      .rectBg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #81d8d0;
+        mix-blend-mode: multiply;
+        height: 150px;
+        
+        z-index: 3; 
+      }
+      
+
+      .ul {
+
+        perspective: 500px;
+        transform-style: preserve-3d;
+        
+        .item {
+
+          transform-style: preserve-3d;
+          margin-right: 10px;
+          position: relative;
+          
+          a {
+            display: block;
+          }
+          
+          /*
+          *
+          *   numWrap
+          *
+          */
+          .numWrap {
+            
+            position: absolute;
+            font-size: 20px;
+            color: #fff;
+            top: -11px;
+            right: 19px;
+            letter-spacing: 0.05em;
+            
+            z-index: 3;
+            
+            p {
+              margin-bottom: 9px;
+            }
+            
+            .bar {
+              width: 19px;
+              height: 1px;
+              background-color: #fff;
+            }
+          }
+          
+          /*
+          *
+          *   box
+          *
+          */
+          .box {
+            width: 350px;
+            height: 540px;
+            overflow: hidden;
+            
+            .bg {
+              position: absolute;
+              z-index: 1;
+            }
+            
+            .titWrap {
+              position: absolute;
+              text-align: left;
+              top: 20px;
+              left: 20px;
+              color: #fff;
+              
+              z-index: 2;
+            }
+            .titWrap.commingWrap {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              color: #fff;
+              transform: translate(-50%,-50%);
+              text-align: center;
+              
+              z-index: 2;
+            }
+
+            .position {
+              
+              font-size: 14px;
+              font-style: italic;
+              letter-spacing: 0em;
+              margin-bottom: 8px;
+              
+              position: relative;
+              z-index: 1;
+            }
+            .name {
+              
+              letter-spacing: 0em;
+              width: 177px;
+              font-size: 22px;
+              
+              position: relative;
+              z-index: 1;
+            }
+
+            .comming {
+              font-size: 20px;
+              letter-spacing: 0.1em;
+              font-style: italic;
+            }
+
+          }
+
+          .box .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .2);
+           
+            z-index: 2; 
+          }
+
+          .titWrap02 {
+
+            position: absolute;
+            text-align: left;
+            z-index: 2;
+            top: 50%;
+            left: 180px;
+            margin-top: -60px;
+
+            .innerWrap {
+              overflow: hidden;
+            }
+            .inner {
+              width: 300px;
+              background-color: #81d8d0;
+              color: #000;
+              padding: 25px 25px 40px;
+              
+              box-sizing: border-box;
+              
+              .position {
+                font-size: 16px;
+                font-style: italic;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 8px;
+                letter-spacing: 0.05em;
+              }
+              .name {
+                font-size: 27px;
+                width: 260px;
+                position: relative;
+                z-index: 1;
+                letter-spacing: 0.05em;
+              }
+            }
+            .readWrap {
+              overflow: hidden;
+              top: 96px;
+              left: 150px;
+              position: absolute;
+            }
+            .read {
+              font-size: 12px;
+              letter-spacing: 0.1em;
+              
+              width: 170px;
+              /* height: 50px; */
+              background-color: #000;
+              color: #fff;
+              padding: 19px 20px;
+              box-sizing: border-box;
+              
+              span {display: block;}
+              
+              svg rect {
+                fill: #fff;
+              }
+              svg path {
+                stroke: #fff;
+              }
+              svg:nth-of-type(1) {
+                position: absolute;
+                /* width: 46px; */
+                left: 147px;
+                top: 22px;
+              }
+              svg:nth-of-type(2) {
+                position: absolute;
+                width: 46px;
+                height: 1px;
+                top: 50%;
+                left: 101px;
+              }
+            }
+            
+          }
+
+        }
+
+        .item:nth-child(1) {
+          
+          .bg {
+            top: -78px;
+            left: -199px;
+            transform: scale(0.82);
+          }
+
+        }
+
+        .item:nth-child(2) {
+          
+          .bg {
+            top: -88px;
+            left: -164px;
+            transform: scale(1.1);
+          }
+
+          .box .name {
+            width: 211px;
+          }
+
+        }
+
+        .item:nth-child(3) {
+          
+          .bg {
+            width: 100%;
+            height: auto;
+          }
+          .titWrap02 {
+
+            left: -100px; 
+            
+          }
+
+        }
+
+
+      }
+
+
+
+    }
+
+    /*
+    *
+    *   textWrap
+    *
+    */
+    .textWrap_pc {
+
+      color: #fff;
+      position: absolute;
+      top: calc(50% + 170px);
+      left: calc(50% - 134px);
+      transform: translate(-50%,-50%);
+      /* width: 1000px; */
+      width: 875px;
+
+      .subTit {
+
+        margin-bottom: 36px;
+        font-size: 32px;
+        letter-spacing: 0.08em;
+        margin-bottom: 20px;
+        
+      }
+
+      .bar {
+        width: 50px;
+        height: 1px;
+        background-color: #fff;
+      }
+
+      .tit {
+        margin-top: 21px;
+        margin-bottom: 19px;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.14em;
+        width: 900px;
+      }
+
+    }
+
+
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

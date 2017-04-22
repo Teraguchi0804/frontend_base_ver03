@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section01
+*
+-------------------------------------------------------------------------------- */
+#top .section01 {
+  
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    /*
+    *
+    *   titWrap
+    *
+    */
+    .titWrap {
+      
+      .text01 img {
+        width: 327px;
+        height: 67px;
+      }
+      
+    }
+
+    /*
+    *
+    *   next
+    *
+    */
+    .next {
+
+      display: none;
+
+      .arrow.pc {display: none;}
+      .arrow.sp {
+
+        display: block;
+        
+        width: 5px;
+        height: 35px;
+        margin: 0 auto;
+        padding-bottom: 19px;
+        
+      }
+
+    }
+  
+
+  }
+
+  // 350以下
+  @media only screen and (max-width: 350px)  {
+
+    /*
+    *
+    *   titWrap
+    *
+    */
+    .titWrap {
+
+      & > img {
+        width: 260px;
+        height: auto;
+      }
+      
+      .text01 img {
+        width: 261px;
+        height: auto;
+      }
+      
+    }
+
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    /*
+    *
+    *   titWrap
+    *
+    */
+    .titWrap {
+      width: 730px;
+      
+      & > img {
+        width: 100%;
+        height: auto;
+      }       
+      & > img:nth-child(1) {
+        margin-bottom: 40px;
+      }
+      & > img:nth-child(2) {
+        margin-bottom: 40px;
+      }
+      
+      .text01 {
+        font-size: 35px;
+        // margin-bottom: 17px;
+        
+        margin-bottom: 0;
+      }
+      .text02 {
+        font-size: 15px;
+        
+        img {
+          position: relative;
+          top: -1px;
+        }
+      }
+
+    }
+
+    .timeWrap {
+
+      bottom: 81px;
+      left: 40px;
+      transform: translateX(0);
+      text-align: left;
+
+      .textWrap {
+        // position: absolute;
+        // left: 50%;
+        // top: 50%;
+        // transform: translate(-50%,-50%);
+        // text-align: center;
+      }
+      
+      .time {
+        padding-top: 7px;
+      }
+
+    }
+
+    /*
+    *
+    *   next
+    *
+    */
+    .next {
+
+      text-align: center;
+      overflow: hidden;  
+      
+      bottom: 8px;
+      padding-bottom: 20px;
+      transform: none;
+      margin-left: -26px;
+      
+      .text {
+        margin-bottom: 16px;
+        font-size: 18px;
+      }
+
+      .bar {
+        // height: 90px;
+        display: none;
+      }
+
+      .arrow.pc {
+
+        display: block;
+        margin: 0 auto;
+        
+      }
+      .arrow.sp {display: none;}
+
+
+    }
+
+    .arrowWrap {
+      position: absolute;
+      left: -10px;
+      top: 30px;
+      
+      rect {
+        fill: #fff;
+      }
+    }
+
+  }
+
+
+  // メインタイトル
+  @media only screen and (min-width: $maxBpSP + 1) and (max-width: 1000px) , screen and (min-width: $maxBpSP + 1) and (max-height: 650px) {
+
+    /*
+    *
+    *   titWrap
+    *
+    */
+    .titWrap {
+      width: 730px;
+      
+      & > img {
+        width: 70%;
+        height: auto;
+      }       
+      & > img:nth-child(1) {
+        margin-bottom: 28px;
+      }
+      & > img:nth-child(2) {
+        margin-bottom: 28px;
+      }
+      
+      .text01 img {
+        width: 366px;
+        height: auto;
+      }
+
+    }
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

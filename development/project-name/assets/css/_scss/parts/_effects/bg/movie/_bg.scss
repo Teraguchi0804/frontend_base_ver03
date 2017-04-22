@@ -1,0 +1,150 @@
+/* --------------------------------------------------------------------------------
+*
+*   movie
+*
+-------------------------------------------------------------------------------- */
+body.movie #bgWrap {
+
+  .sec02 {
+
+    display: block;
+    
+    .bg {
+      // background: url(/project-name/assets/resource/img/movie/bg.jpg) no-repeat;
+      // background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      
+      background-color: rgba(0,0,0,.5);
+      
+      z-index: 2;
+    }
+
+    /*
+    *
+    *   overlay
+    *
+    */
+    .overlay.black {
+      height: 85%;
+      background-color: rgba(0, 0, 0, .5);
+      
+      z-index: 2;
+      
+      position: absolute;
+    }
+    .overlay.blue {
+      height: 15%;
+      bottom: 0;
+      top: auto;
+      background-color: rgba(129, 216, 208, 1);
+      mix-blend-mode: multiply;
+      
+      z-index: 2;
+      
+      position: absolute;
+    }
+
+  }
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    height: 667px;
+    
+    .sec02 {
+
+      display: block;
+      
+      .overlay.blue {
+        height: 15%;
+        top: 85%;
+        bottom: auto;
+        background-color: rgba(129, 216, 208, 1);
+        mix-blend-mode: multiply;
+        
+        z-index: 2;
+        
+        position: absolute;
+        transform: translate3d(0px, 0px, 1px);
+      }
+
+    }
+    
+    .bg {
+      // display: none;
+    }
+
+    .sec02BgCanvas {
+      
+       
+    }
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+  
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .sec02 {
+    
+      .sec02BgCanvas {
+        position: relative;
+        z-index: 1;
+        
+        canvas {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      /*
+      *
+      *   overlay
+      *
+      */
+      .overlay.black {
+        height: 65.9%;
+        background-color: rgba(0, 0, 0, .5);
+        
+        z-index: 2;
+      }
+      .overlay.blue {
+        height: 34.1%;
+        bottom: 0;
+        top: auto;
+        background-color: rgba(129, 216, 208, 1);
+        mix-blend-mode: multiply;
+        
+        z-index: 2;
+      }
+
+    }
+
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

@@ -1,0 +1,54 @@
+/* --------------------------------------------------------------------------------
+*
+*   select box
+*
+-------------------------------------------------------------------------------- */
+      
+.selectBox {display: none;}
+.selectBoxArea {
+  width: 410px;
+  height: 30px;
+
+  box-sizing: border-box;
+  border: 1px solid #bebebe;
+  
+  .selectBoxArea__display {
+    height: 100%;
+    
+    padding-left: 20px;
+
+    line-height: 30px;
+  }
+  .selectBoxArea__listWrap {
+    position: relative;
+    z-index: 99999;
+    left: -1px;
+    display: none;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    width: calc(100% + 2px);
+    height: 140px;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+  }
+  .selectBoxArea__list {      
+    height: 100%;
+    padding-top: 3px;
+  }
+  .selectBoxArea__listItem {
+    padding: 2px 0;
+    line-height: 25px;
+    
+    .item {
+      display: block;
+      box-sizing: border-box;
+      padding-left: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .item:hover {
+      background-color: #eee;
+    }
+  }
+
+}

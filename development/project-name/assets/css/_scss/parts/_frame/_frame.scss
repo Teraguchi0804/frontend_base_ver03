@@ -1,0 +1,91 @@
+/* --------------------------------------------------------------------------------
+*
+*   frame
+*
+-------------------------------------------------------------------------------- */
+.frame {
+  
+  z-index: z(frame);
+  
+  transition: opacity .25s $easeOutQuad 0s;
+  
+}
+
+/*
+*
+*   media query   
+*
+*/
+
+// 768以下
+@media only screen and (max-width: $maxBpSP) {
+
+
+}
+
+// 320以下
+@media only screen and (max-width: $minBpSP)  {
+
+
+}
+
+// 768以上
+@media only screen and (min-width: $maxBpSP + 1) {
+
+  .frameT {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #000;
+    
+    box-sizing: border-box;
+  }
+
+  .frameR {
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #000;
+    
+    box-sizing: border-box;
+    
+  }
+
+  .frameB {
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #000;
+    
+    box-sizing: border-box;
+    
+  }
+
+  .frameL {
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #000;
+    
+    box-sizing: border-box;
+    
+  }
+ 
+}
+
+// 1281以上
+@media only screen and (min-width: $maxBpPC + 1) {
+
+
+}

@@ -1,0 +1,391 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------------------------------------
+*
+*   section03
+*
+-------------------------------------------------------------------------------- */
+#top .section03 {
+  
+  .box01 {
+  
+    .textWrap {
+      position: absolute;
+      top: 67px;
+      left: 0;
+      padding: 0 25px;
+      color: #fff;
+      
+      .text01 {
+        font-size: 18px;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+        
+        @extend %cormorant;
+      }
+
+      .tit {
+        margin-bottom: 16px;
+      }
+
+      .text02 {
+        font-size: 12px;
+        line-height: 1.66;
+        letter-spacing: 0.03em;
+        text-align: justify;
+      }
+    }
+
+  }
+
+  /*
+  *
+  *   box02
+  *
+  */
+  .box02 {
+    
+    .titWrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 340px;
+      height: 100px;
+      padding: 17px 0 18px 105px;
+      color: #fff;
+      
+      
+      .rectBg {
+        background-color: #81d8d0;
+        mix-blend-mode: multiply;
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .numWrap {
+        @extend %roboto;
+        
+        position: absolute;
+        left: 25px;
+        top: 18px;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        
+        p {
+          margin-bottom: 3px;
+        }
+        
+        .bar {
+          width: 6px;
+          height: 1px;
+          background-color: #fff;
+        }
+      }
+
+      .position {
+        @extend %cormorant;
+        
+        font-size: 13px;
+        letter-spacing: 0em;
+        font-style: italic;
+        margin-bottom: 7px;
+        
+        position: relative;
+        z-index: 1;
+      }
+      .name {
+        @extend %cormorant;
+        
+        font-size: 25px;
+        letter-spacing: 0em;
+        margin-bottom: 12px;
+        
+        position: relative;
+        z-index: 1;
+      }
+
+      .detail {
+        @extend %roboto;
+        
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        
+        position: relative;
+        z-index: 1;
+        
+        svg {
+          position: absolute;
+          left: 68px;
+          top: 2px;
+
+          width: 50px;
+          height: 5px;
+          
+          path {
+            fill: #fff;
+            // fill-rule: evenodd;
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  *
+  *   box03
+  *
+  */
+  .box03 {
+    
+    .titWrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 340px;
+      height: 100px;
+      padding: 17px 0 18px 105px;
+      color: #fff;
+      
+      
+      .rectBg {
+        background-color: #81d8d0;
+        mix-blend-mode: multiply;
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .numWrap {
+        @extend %roboto;
+        
+        position: absolute;
+        left: 25px;
+        top: 18px;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        
+        p {
+          margin-bottom: 3px;
+        }
+        
+        .bar {
+          width: 6px;
+          height: 1px;
+          background-color: #fff;
+        }
+      }
+
+      .position {
+        @extend %cormorant;
+        
+        font-size: 13px;
+        letter-spacing: 0em;
+        font-style: italic;
+        margin-bottom: 7px;
+        
+        position: relative;
+        z-index: 1;
+      }
+      .name {
+        @extend %cormorant;
+        
+        font-size: 25px;
+        letter-spacing: 0em;
+        margin-bottom: 12px;
+        
+        position: relative;
+        z-index: 1;
+      }
+
+      .detail {
+        @extend %roboto;
+        
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        
+        position: relative;
+        z-index: 1;
+        
+        svg {
+          position: absolute;
+          left: 68px;
+          top: 2px;
+
+          width: 50px;
+          height: 5px;
+          
+          path {
+            fill: #fff;
+            // fill-rule: evenodd;
+          }
+        }
+      }
+    }
+
+  }
+  /*
+  *
+  *   box04
+  *
+  */
+  .box04 {
+    
+    .titWrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 340px;
+      height: 100px;
+      padding: 17px 0 18px 105px;
+      color: #fff;
+      
+      
+      .rectBg {
+        background-color: #81d8d0;
+        mix-blend-mode: multiply;
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .numWrap {
+        @extend %roboto;
+        
+        position: absolute;
+        left: 25px;
+        top: 18px;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        
+        p {
+          margin-bottom: 3px;
+        }
+        
+        .bar {
+          width: 6px;
+          height: 1px;
+          background-color: #fff;
+        }
+      }
+
+      .position {
+        @extend %cormorant;
+        
+        font-size: 13px;
+        letter-spacing: 0em;
+        font-style: italic;
+        margin-bottom: 7px;
+        
+        position: relative;
+        z-index: 1;
+      }
+      .name {
+        @extend %cormorant;
+        
+        font-size: 25px;
+        letter-spacing: 0em;
+        margin-bottom: 12px;
+        
+        position: relative;
+        z-index: 1;
+      }
+
+      .detail {
+        @extend %roboto;
+        
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        
+        position: relative;
+        z-index: 1;
+        
+        svg {
+          position: absolute;
+          left: 68px;
+          top: 2px;
+
+          width: 50px;
+          height: 5px;
+          
+          path {
+            fill: #fff;
+            // fill-rule: evenodd;
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  *
+  *   box05
+  *
+  */
+  .box05 {
+
+    .titWrap {
+      color: #fff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+
+    .text {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      margin-bottom: 7px;
+      margin-left: 7px;
+      
+      @extend %roboto;
+    }
+
+    .arrow.sp {
+
+      display: block;
+      
+      width: 5px;
+      height: 35px;
+      margin: 0 auto;
+      padding-bottom: 19px;
+      
+    }
+
+    .bagWrap {margin-left: -1px;}
+
+    .barWrap {
+      margin-left: -3px;
+    }
+    .bar {
+      width: 1px;
+      height: 50px;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+
+  }
+
+  .indicator {
+    
+    @extend %cormorant;
+    color: #fff;
+    
+  }
+
+}

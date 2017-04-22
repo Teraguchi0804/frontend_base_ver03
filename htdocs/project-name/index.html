@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ************************************************************
+//
+//  meta
+//
+// ************************************************************ -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
+<title></title>
+<meta name="description" content="ダミーダミーダミーダミーダミーダミーダミー" class="metaDes">
+<meta name="keywords" content="ダミーダミーダミーダミーダミーダミーダミー" class="metaKey">
+<meta name="author" content="">
+
+<!-- fb ogp -->     
+<meta property="og:title" content="ダミーダミーダミーダミーダミーダミーダミー" class="fbTit" /> 
+<meta property="og:type" content="website" class="fbType" />
+<meta property="og:url" content="" class="fbUrl" /> 
+<meta property="og:image" content="" class="fbImg" />
+<meta property="og:site_name" content="" class="fbSiteName" />
+<meta property="og:description" content="ダミーダミーダミーダミーダミーダミーダミー" class="fbDes" />
+
+<!-- twitter ogp -->
+<meta name="twitter:card" content="summary_large_image" class="twCard">
+<meta name="twitter:site" content="" class="twSiteName">
+<meta name="twitter:creator" content="" class="twCreator">
+<meta name="twitter:url" content="ダミーダミーダミーダミーダミーダミーダミー" class="twUrl">
+<meta name="twitter:title" content="" class="twTit">
+<meta name="twitter:description" content="ダミーダミーダミーダミーダミーダミーダミー" class="twDes">
+<meta name="twitter:image" content="" class="twImg">
+    <!-- ************************************************************
+//
+//  style sheet
+//
+// ************************************************************ -->
+<link href="https://fonts.googleapis.com/css?family=Cormorant:500,500i|Roboto+Condensed" rel="stylesheet">
+<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+    <link href="/project-name/assets/css/top/style.css" rel="stylesheet" class="stylesheet">
+    <!-- ************************************************************
+//
+//  script
+//
+// ************************************************************ -->
+<script type='text/javascript' src='/project-name/assets/js/common/libs.js'></script>
+    <script type='text/javascript' src='/project-name/assets/js/main.js'></script>
+
+    <script>
+//        onload = function(){
+//            // canvasエレメントを取得
+//            var c = document.getElementById('canvas');
+//            c.width = 500;
+//            c.height = 300;
+//
+//            // webglコンテキストを取得
+//            var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+//
+//            // canvasを黒でクリア(初期化)する
+//            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+//            gl.clear(gl.COLOR_BUFFER_BIT);
+//        };
+    </script>
+
+    <script id="vs" type="x-shader/x-vertex">
+attribute vec3 position;
+uniform   mat4 mvpMatrix;
+
+void main(void){
+    gl_Position = mvpMatrix * vec4(position, 1.0);
+}
+        </script>
+
+    <script id="fs" type="x-shader/x-fragment">
+void main(void){
+    gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+}
+        </script>
+
+</head>
+<body id="top" class="top" data-id="top">
+
+
+<!-- ************************************************************
+//
+//  Loading
+//
+// ************************************************************ -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="wrapper">
+    <div id="inner">
+
+        <div class="section section01" data-id="top">
+
+  <!--<canvas id="canvas"></canvas>-->
+
+  <img src="/project-name/assets/resource/img/top/dummy01.jpg" width="450" height="329">
+
+</div>
+
+    </div>
+</div>
+
+<!-- ************************************************************
+//
+//  footer
+//
+// ************************************************************ -->
+<footer id="footer">
+
+  <!--&lt;!&ndash; copy &ndash;&gt;-->
+  <!--<div class="copy">-->
+    <!--COPYRIGHT SOCIETE DU FIGARO COPYRIGHT CCC Media House Co.,Ltd. <br>-->
+    <!--NO REPRODUCTION OR REPUBLICATION WITHOUT WRITTEN PERMISSION.-->
+  <!--</div>-->
+
+  <!--<p class="text">-->
+    <!--<img src="/project-name/assets/resource/img/top/text02_pc.png" height="15" width="259" alt="">-->
+  <!--</p>-->
+
+</footer>
+
+
+</body>
+</html>

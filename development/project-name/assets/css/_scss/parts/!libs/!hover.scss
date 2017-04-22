@@ -1,0 +1,86 @@
+/* --------------------------------------------------------------------------------
+*
+*   hover
+*
+-------------------------------------------------------------------------------- */
+  
+/*
+*
+*   img hovers
+*
+*/
+// opacity
+.op {
+  transition: opacity .25s $easeOutQuad 0s;
+  
+  &:hover {
+    cursor: pointer;
+    opacity: 0.4 !important;
+  }
+}
+// scale
+.scale {
+  transition: transform .35s $easeOutQuad 0s;
+  
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+.scale_img {
+  transition: transform .3s $easeOutQuad 0s;
+  
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+}
+
+/*
+*
+*   text hover
+*   広がる、色が変わる(背景色と文字色)
+*/    
+// underline
+// .under {border-bottom: 1px solid #1c426d;}
+// .under:hover {border-bottom: none;}
+
+.under {
+  text-decoration: underline !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+._under {
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+.under__red {
+  border-bottom: none;
+  
+  &:hover {
+    border-bottom: 1px solid #c30000;
+  }
+}
+
+
+/*
+*
+*   cursor
+*
+*/
+.cp {cursor: pointer;}
+
+/*
+*
+*   linkarea
+*
+*/
+.linkArea:hover .link {border-bottom: 1px solid #1c426d;}
+.linkArea img {      
+  transition: all .25s $easeOutQuad 0s;
+}
+.linkArea:hover img {opacity: 0.5;}

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   blend mode
+*
+-------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------
+*
+*   interview
+*
+-------------------------------------------------------------------------------- */
+.not-mix-blend-mode body.interview #bgWrap {
+
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+  
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    /*
+    *
+    *   block
+    *
+    */
+
+    .block {
+
+      .rectBg {
+        background-color: #81d8d0;
+        opacity: 0.35;
+      }
+      
+    }
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

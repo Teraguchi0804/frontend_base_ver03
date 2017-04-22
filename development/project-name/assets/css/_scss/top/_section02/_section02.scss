@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------------------------------------
+*
+*   section02
+*
+-------------------------------------------------------------------------------- */
+#top .section02 {
+
+
+  /*
+  *
+  *   textWrap
+  *
+  */
+  .textWrap {
+    
+    transform-origin: 50% 0;
+        
+    .subTit {
+      margin-bottom: 17px;
+      font-size: 0;
+      
+      img {
+        width: 95px;
+        height: auto;
+      }
+      img:nth-child(1) {
+        margin-right: 13px;
+      }
+    }
+
+    & > .bar {
+      width: 35px;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    & > .tit {
+      margin-top: 13px;
+      margin-bottom: 16px;
+      
+      width: 342px;
+      font-size: 45px;
+      line-height: 1.1;
+      
+      @extend %cormorant;
+      
+      letter-spacing: 0.08em;
+      color: #fff;
+      
+      span {
+        color: #81d8d0;
+      }
+
+      br.sp {
+        display: block;
+      }
+      br.pc {
+        display: none;
+      }
+
+    }
+
+    .text {
+      margin-bottom: 28px;
+    }
+
+    .play {
+      color: #fff;
+      @extend %roboto;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      padding: 18px 20px;
+      border: 1px solid #fff;
+      background: url(/project-name/assets/resource/svg/arrow_play.svg) no-repeat;
+      background-position: 94%;
+      background-size: 7px 13px;
+      box-sizing: border-box;
+      width: 330px;
+      
+      margin-bottom: 45px;
+      cursor: pointer;
+      overflow: hidden;
+
+    }
+
+    .sec02VideoForSPWrap {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.7);
+      
+      display: none;
+      
+      .inner {
+        height: 100%;
+      }
+    }
+    #sec02VideoForSP {
+      width: 100%;
+      height: 60%;
+      position: absolute;
+      top: 50%;
+      height: 60%;
+    }
+
+    .details {
+      
+      color: #fff;
+      
+      font-size: 13px;
+      line-height: 1.76;
+      
+      @extend %cormorant;
+      
+      .tit {
+        font-size: 11px;
+        margin-bottom: 10px;
+      }
+      
+      .bar {
+        width: 20px;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 7px;
+      }
+    }
+
+  }
+
+  /*
+  *
+  *   next
+  *
+  */
+  .next {
+    
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+    .text {
+      @extend %roboto;
+      
+      font-size: 15px;
+      letter-spacing: 0.1em;
+      margin-bottom: 9px;
+      line-height: 1;
+    }
+
+    .bar {
+      height: 50px;
+      width: 1px;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+
+    .arrow.sp {
+
+      display: block;
+
+      width: 5px;
+      height: 35px;
+      margin: 0 auto;
+      padding-bottom: 19px;
+      
+    }
+
+  }
+
+  .indicator {
+    @extend %cormorant;
+    color: #fff;
+  }
+
+}

@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section03_detail01
+*
+-------------------------------------------------------------------------------- */
+#top .section03_detail03 {
+
+
+  /* --------------------------------------------------------------------------------
+  *
+  *   media query
+  *
+  -------------------------------------------------------------------------------- */
+ 
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+
+    /* --------------------------------------------------------------------------------
+    *
+    *   block01
+    *
+    -------------------------------------------------------------------------------- */
+    .block01 {
+
+
+      .tit {
+        
+        width: 340px;
+        height: 200px;
+        padding: 25px 15px 19px 26px;
+
+      }
+
+
+    }
+
+    /* --------------------------------------------------------------------------------
+    *
+    *   block02
+    *
+    -------------------------------------------------------------------------------- */
+    .block02 {
+
+      .imgWrap01 {
+
+        
+        img {
+          width: 270px;
+          height: 180px;
+        }
+        
+      }
+
+      .imgWrap02 {
+        
+        img {
+          width: 165px;
+          height: 110px;
+        }
+
+      }
+
+
+      .text02 {
+        margin-bottom: 38px;
+      }
+
+      .imgWrap03 {
+        
+        .imgInner {
+          left: calc(50% + 72px);
+        }
+
+
+      }
+
+      .text03 {
+        margin-bottom: 72px;
+      }
+
+      .blockInner02 {      
+
+        .text04 {
+          margin-bottom: 36px;
+        }
+
+        // .imgWrap04 {
+        //   height: 200px;
+        //   margin-bottom: 40px;
+          
+        //   .imgInner {
+            
+        //     position: absolute;
+        //     left: calc(50% + 9px);
+        //     transform: translateX(-50%);;
+            
+        //     .bg {
+        //       position: absolute;
+        //       z-index: 1;
+        //       background-color: #81d8d0;
+        //       width: 300px;
+        //       height: 160px;
+        //       left: 57px;
+        //       top: 45px;
+        //     }
+
+        //     img {
+        //       position: relative;
+        //       z-index: 2;
+              
+        //       width: 300px;
+        //       height: 200px;
+        //     }
+        //   }
+
+        // }
+
+        // .text05 {
+        //   margin-bottom: 110px;
+        // }
+        
+      }
+
+    }
+
+    .block03 {
+      
+      .blockInner01 {
+
+        .img {
+          width: 275px;
+          height: 275px;
+        }
+        .insta {
+          width: 80px;
+          height: 80px;
+        }
+        
+      }
+    }
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    /* --------------------------------------------------------------------------------
+    *
+    *   block02 sss
+    *
+    -------------------------------------------------------------------------------- */
+    .block02 {
+
+      padding-top: 200px;
+      
+      .imgWrap01 {
+        .imgInner {
+          width: 540px;
+          height: 360px;
+          
+          img {
+            position: absolute;
+          }
+        }
+      }
+
+      .blockInner01 .text03 {
+        width: 504px;
+        margin: 0 auto;
+        padding: 0;
+        padding-left: 433px;
+        text-align: justify;
+        margin-top: -95px;
+        margin-bottom: 40px;
+      }
+
+      .imgWrap03 .imgInner {
+        top: 80px;
+        left: calc(50% - -220px);
+        
+        width: 360px;
+        height: 540px;
+        
+
+        img {
+          position: absolute;
+        }
+      }
+      .imgWrap03 .imgInner .bg {
+        left: 100px;
+      }
+
+      .tit02 {
+        left: calc(50% - 263px);
+      }
+
+      .text04 {
+        left: calc(50% - 220px);
+        top: 265px;
+      }
+
+      .text05 {
+        top: 745px;
+        left: calc(50% + 218px);
+        width: 355px;
+      }
+
+      .imgWrap03 {
+        margin-bottom: 653px;
+      }
+
+      .imgWrap04 {
+        top: 830px;
+        left: calc(50% + -109px);
+      }
+
+      .imgWrap05 {
+        padding-bottom: 63px;
+        
+        .imgInner img {
+          height: 620px;
+          position: absolute;
+        }
+        .imgInner {
+          width: 1010px;
+          height: 620px;
+        }
+      }
+
+    }
+
+    .block04 .boxWrap .boxWrapInner .box02 .titWrap {
+        width: 450px;
+    }
+
+   
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}
+
+
+
+

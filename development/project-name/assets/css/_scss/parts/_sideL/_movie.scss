@@ -1,0 +1,65 @@
+/* --------------------------------------------------------------------------------
+*
+*   sideL
+*
+-------------------------------------------------------------------------------- */
+
+body.movie #sideL {  
+
+  display: none;
+  
+  z-index: z(sideL);
+  
+  .sns {display: none;}
+  
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    display: none;
+    
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    
+    height: 60px;
+    width: 0;
+    width: 330px;
+    background-color: #000;
+    
+    .sns.pc {display: none;}  
+    .sns.sp {display: none;}
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    display: block;
+
+    .sns.sp {
+
+      display: block;
+      
+    }
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

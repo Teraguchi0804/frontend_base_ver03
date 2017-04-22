@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+*
+*   section04 sss
+*
+-------------------------------------------------------------------------------- */
+#top .section04 {
+
+  /* --------------------------------------------------------------------------------
+  *
+  *    block04
+  *
+  -------------------------------------------------------------------------------- */
+  .block04 {
+
+    // opacity: 0;
+    
+    height: 105px;
+    background-color: #81d8d0;
+    
+    overflow: hidden;
+
+    .pageTop {
+
+      position: absolute;
+      right: 25px;
+      bottom: -6px;
+
+      span {
+        position: absolute;
+        letter-spacing: 0.1em;
+        font-size: 10px;
+        
+        transform: rotate(-90deg);
+        left: -37px;
+        top: 38px;
+        display: block;
+        width: 49px !important;
+        
+        @extend %roboto;
+      }
+      
+      svg {
+        width: 5px;
+        height: 88px;
+        
+        path {fill: #000;}
+      }
+
+    }
+
+    .copy {
+      font-size: 7px;
+      letter-spacing: 0;
+      
+      position: absolute;
+      bottom: 21px;
+      left: 25px;
+      
+      
+      line-height: 1.42;
+      
+      @extend %roboto;
+    }
+  }
+
+}

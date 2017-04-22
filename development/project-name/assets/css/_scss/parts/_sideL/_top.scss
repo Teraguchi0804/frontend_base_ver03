@@ -1,0 +1,126 @@
+/* --------------------------------------------------------------------------------
+*
+*   sideL
+*
+-------------------------------------------------------------------------------- */
+
+body.top #sideL {
+
+  .sns.pc {
+    @extend %roboto;
+  }
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    transform-origin: 0 100% !important;
+
+    .sns.sp {
+      display: block !important;
+      opacity: 1;
+    }
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    display: block;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    
+    /*
+    *
+    *   sns
+    *
+    */
+
+    // .sns.sp {display: none !important;}
+    .sns.pc {
+
+      display: block;
+
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      /* display: none; */
+      transform: translateY(-50%);
+      
+      .tit {
+
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        color: #fff;
+
+        transform: rotate(90deg);
+        position: absolute;
+        left: -10px;
+        top: -69px;
+        
+      }      
+
+      .bar {
+        
+        position: absolute;
+        top: -37px;
+        left: 9px;
+        width: 1px;
+        height: 20px;
+        background-color: #fff;
+        
+      }
+
+      
+      .list {
+
+        text-align: center;
+        
+        .item {
+          
+          margin-bottom: 14px;
+          
+          svg {
+            padding: 6px;
+            margin-left: -7px;
+            margin-top: -6px;
+          }
+
+        }
+        .item:nth-child(3) svg {
+          width: 16px;
+          height: 12px;
+        }
+          
+        path {
+          fill: #fff;
+        }
+
+      }
+    }
+
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+
+}

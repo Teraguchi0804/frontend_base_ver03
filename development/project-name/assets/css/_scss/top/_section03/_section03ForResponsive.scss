@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------------------------------------
+*
+*   section03
+*
+-------------------------------------------------------------------------------- */
+#top .section03 {
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    height: auto;
+
+    .box01 {
+    
+      // textwrap
+      .textWrap {
+        
+        .tit img {
+          
+          width: 306px;
+          height: 108px;
+          
+        }
+
+        .bar {
+          width: 35px;
+          height: 1px;
+          background-color: #fff;
+          
+          margin-bottom: 10px;
+        }
+
+      }
+      // sns
+      .snsWrap {
+        height: 60px;
+        width: 0;
+        // width: 330px;
+        background-color: #000;
+        
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+      .sns.sp {
+        display: block;
+        height: 100%;
+      
+        .iconShare {
+
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+
+        }
+
+        .bar {
+
+          display: none;
+          
+          position: absolute;
+          bottom: 31px;
+          left: 57px;
+          width: 30px;
+          height: 1px;
+          background-color: #fff;
+        }
+
+        .list {
+
+          display: none;
+          
+          position: absolute;
+          left: 116px;
+          bottom: 18px;
+          width: 185px;
+          
+          .item {
+            margin-right: 36px;
+          }
+
+          .item:nth-child(1) svg {
+            width: 12px;
+            height: 24px;
+          }
+          .item:nth-child(2) {
+            position: relative;
+            top: 3px;
+          }
+          .item:nth-child(2) svg {
+            width: 23px;
+            height: 20px;
+          }
+          .item:nth-child(3) {
+            position: relative;
+                top: 6px;
+          }
+          .item:nth-child(3) svg {
+            width: 20px;
+            height: 14px;
+          }
+          .item:nth-child(4) {
+            position: relative;
+            top: 4px;
+          }
+          .item:nth-child(4) svg {
+            width: 21px;
+            height: 20px;
+          }
+          
+        }
+
+      }
+    
+      // indicator
+      .indicator {
+        position: absolute;      
+        right: 23px;
+        bottom: 20px;
+        
+        img {
+          width: 18px;
+          height: 19px;
+        }
+
+        .current {
+          font-size: 22px;
+          position: absolute;
+          top: -16px;
+          left: -2px;
+        }
+        .total {
+          font-size: 13px;
+          position: absolute;
+          bottom: 1px;
+          right: -3px;
+        }
+      }
+
+    }
+    
+    .ul_pc {display: none;}
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    overflow: hidden;
+    
+    width: 100% !important;
+    
+    transform-origin: 50% 50% !important;
+
+    .box {
+      display: none;
+    }
+
+    /*
+    *
+    *   textWrap
+    *
+    */
+    .textWrap_pc {
+
+      color: #fff;
+      position: absolute;
+      left: calc(50% - 154px);
+      top: calc(50% + 230px);
+      transform: translate(-50%,-50%);
+      /* width: 1000px; */
+      width: 875px;
+
+      .subTit {
+
+        margin-bottom: 36px;
+        font-size: 32px;
+        letter-spacing: 0.08em;
+        margin-bottom: 20px;
+        
+      }
+
+      .bar {
+        width: 50px;
+        height: 1px;
+        background-color: #fff;
+      }
+
+      .tit {
+        margin-top: 21px;
+        margin-bottom: 24px;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.14em;
+        width: 900px;
+      }
+
+    }
+
+    /*
+    *
+    *   ul_pc
+    *
+    */
+    .ul_pc {
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 1070px;
+      transform: translate(-50%, -50%);
+      
+      .item {
+
+        margin-right: 10px;
+
+        a {
+          width: 350px;
+          display: block;
+          height: 540px;
+        }
+        
+      }
+
+    }
+   
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

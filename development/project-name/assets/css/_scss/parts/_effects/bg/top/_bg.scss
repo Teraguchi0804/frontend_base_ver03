@@ -1,0 +1,193 @@
+/* --------------------------------------------------------------------------------
+*
+*   top
+*
+-------------------------------------------------------------------------------- */
+body.top #bgWrap {
+
+  /* --------------------------------------------------------------------------------
+  *
+  *   sec01
+  *
+  -------------------------------------------------------------------------------- */
+  .sec01 {
+
+    display: block;
+    
+    .bg {
+
+      width: 100%;
+      height: 100%;
+      
+      //background: url(/project-name/assets/resource/img/top/img01_sp.jpg) no-repeat;
+      background-size: cover;
+      background-position: top center;
+      
+    }
+
+    .slider {
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      
+      .overlay {
+        background-color: #fff;
+        opacity: 0;
+      }
+      
+      .item {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+        opacity: 0;
+                
+      }
+
+      .item01 {
+
+        //background: url(/project-name/assets/resource/img/top/mv01.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+        opacity: 1;
+                
+      }
+      .item02 {
+
+        //background: url(/project-name/assets/resource/img/top/mv02.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+                
+      }
+      .item03 {
+
+        //background: url(/project-name/assets/resource/img/top/mv03.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+                
+      }
+      .item04 {
+
+        //background: url(/project-name/assets/resource/img/top/mv04.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+                
+      }
+      .item05 {
+
+        //background: url(/project-name/assets/resource/img/top/mv05.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+                
+      }
+      .item06 {
+
+        //background: url(/project-name/assets/resource/img/top/mv06.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+                
+      }
+
+
+    }
+
+  }
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+    min-width: 0;
+
+    #sec01Video {
+      
+      display: none;
+
+    }
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    min-width: 0;
+
+    .sec01 {
+
+      .slider {
+        display: none;
+      }
+
+      .bg {
+        display: none;
+      }
+
+      .sec01VideoWrap {
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+      }
+
+      .bgOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 25%, rgba(0,0,0,0.7) 100%);
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 25%,rgba(0,0,0,0.7) 100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 25%,rgba(0,0,0,0.7) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 );
+      }
+      .bgOverlayImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        //background: url(/project-name/assets/resource/img/top/loading_bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+        opacity: 0;
+      }
+      .bgOverlayImg.isActive {
+        
+        opacity: 1 !important;
+        
+      }
+
+    }
+   
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+
+}

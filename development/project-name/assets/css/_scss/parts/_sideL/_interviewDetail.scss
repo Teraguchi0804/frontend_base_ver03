@@ -1,0 +1,42 @@
+/* --------------------------------------------------------------------------------
+*
+*   sideL
+*
+-------------------------------------------------------------------------------- */
+body.interview_detail #sideL {  
+
+  display: none;
+  
+  z-index: z(sideL);
+    
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}

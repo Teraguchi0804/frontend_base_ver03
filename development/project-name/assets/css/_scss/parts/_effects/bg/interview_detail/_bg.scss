@@ -1,0 +1,388 @@
+/* --------------------------------------------------------------------------------
+*
+*   interview_detail
+*
+-------------------------------------------------------------------------------- */
+.interview_detail #bgWrap {
+
+  .blockWrap {
+    
+    display: none;
+    
+  }
+
+
+  .block {
+
+    display: none;
+    
+    .ul .item {
+
+      .numWrap {
+
+        @extend %roboto;
+        
+      }
+
+      .box {
+
+        .position {
+          @extend %cormorant;
+
+        }
+        .name {
+          @extend %cormorant;
+        }
+        .comming {
+          @extend %cormorant;
+        }
+
+      }
+
+    }
+
+  }
+  
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+  
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .sec03 {
+      display: block;
+      background-color: #fff;  
+    }
+
+    .sec03BgCanvas.interview01 {
+
+      background: url(/project-name/assets/resource/img/interview/01/img_bg_pc.jpg) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 700px;
+       
+    }
+    .sec03BgCanvas.interview02 {
+
+      background: url(/project-name/assets/resource/img/interview/02/img_bg_pc.jpg) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 700px;
+       
+    }
+    .sec03BgCanvas.interview03 {
+
+      background: url(/project-name/assets/resource/img/interview/03/img_bg_pc.jpg) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 700px;
+       
+    }
+
+    /*
+    *
+    *   block
+    *
+    */
+
+    .block {
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 1070px;
+      
+      .rectBg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #81d8d0;
+        mix-blend-mode: multiply;
+        height: 150px;
+        
+        z-index: 3; 
+      }
+      
+
+      .ul {
+        
+        .item {
+
+          margin-right: 10px;
+          
+          /*
+          *
+          *   numWrap
+          *
+          */
+          .numWrap {
+            
+            position: absolute;
+            font-size: 20px;
+            color: #fff;
+            top: -11px;
+            right: 19px;
+            letter-spacing: 0.05em;
+            
+            z-index: 3;
+            
+            p {
+              margin-bottom: 9px;
+            }
+            
+            .bar {
+              width: 19px;
+              height: 1px;
+              background-color: #fff;
+            }
+          }
+          
+          /*
+          *
+          *   box
+          *
+          */
+          .box {
+            width: 350px;
+            height: 540px;
+            overflow: hidden;
+            
+            .bg {
+              position: absolute;
+              z-index: 1;
+            }
+            
+            .titWrap {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              color: #fff;
+              transform: translate(-50%,-50%);
+              text-align: center;
+              
+              z-index: 2;
+            }
+
+            .position {
+              
+              font-size: 14px;
+              letter-spacing: 0.05em;
+              font-style: italic;
+              margin-bottom: 7px;
+              
+              position: relative;
+              z-index: 1;
+            }
+            .name {
+              
+              letter-spacing: 0.05em;
+              width: 177px;
+              font-size: 24px;
+              
+              position: relative;
+              z-index: 1;
+            }
+
+            .comming {
+              font-size: 20px;
+              letter-spacing: 0.1em;
+              font-style: italic;
+            }
+
+          }
+
+          .box .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .4);
+           
+            z-index: 2; 
+          }
+
+        }
+
+        .item:nth-child(1) {
+          
+          .bg {
+            left: -217px;
+            top: -98px;
+            transform: scale(0.82);
+          }
+
+        }
+
+        .item:nth-child(2) {
+          
+          .bg {
+            left: -377px;
+            top: -108px;
+            transform: scale(1.1);
+          }
+
+          .box .name {
+            width: 211px;
+          }
+
+        }
+
+        .item:nth-child(3) {
+          
+          .bg {
+            width: 100%;
+            height: auto;
+          }
+
+        }
+
+
+      }
+
+    }
+
+    /*
+    *
+    *   overlay
+    *
+    */
+    .overlay {
+      display: none;
+    }
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}
+
+/* --------------------------------------------------------------------------------
+*
+*   interviewDetail03
+*
+-------------------------------------------------------------------------------- */
+.interview_detail.interview_detail03 #bgWrap {
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+  
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .sec03BgCanvas {
+
+      background: url(/project-name/assets/resource/img/interview/02/img_bg_pc.jpg) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 700px;
+       
+    }
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}
+
+/* --------------------------------------------------------------------------------
+*
+*   interviewDetail03
+*
+-------------------------------------------------------------------------------- */
+.interview_detail.interview_detail03 #bgWrap {
+
+  /*
+  *
+  *   media query   
+  *
+  */
+
+  // 768以下
+  @media only screen and (max-width: $maxBpSP) {
+
+  }
+
+  // 320以下
+  @media only screen and (max-width: $minBpSP)  {
+
+  
+  }
+
+  // 768以上
+  @media only screen and (min-width: $maxBpSP + 1) {
+
+    .sec03BgCanvas {
+
+      background: url(/project-name/assets/resource/img/interview/03/img_bg_pc.jpg) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 700px;
+       
+    }
+
+  }
+
+  // 1281以上
+  @media only screen and (min-width: $maxBpPC + 1) {
+
+
+  }
+
+}
+
