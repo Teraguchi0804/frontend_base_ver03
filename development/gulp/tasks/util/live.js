@@ -11,7 +11,7 @@ gulp.task("browserSync", ()=>{
     browserSync({
         server: {
             notify: false,
-            baseDir: PATH.root + 'development/', // ルートとなるディレクトリを指定
+            baseDir: '../src/' // ルートとなるディレクトリを指定
         }
     });
 });

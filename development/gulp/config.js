@@ -1,9 +1,10 @@
 // config
 var PROJECT_ROOT = '../';
 
-var DEV = 'project-name/';
-// var RELEASE = 'release/';
-var RELEASE = 'htdocs/project-name/';
+var DEV = 'src/';
+
+var RELEASE = '../htdocs/project-name/';
+
 var BUILD = 'build/';
 
 var DEVPATH = {
@@ -14,14 +15,14 @@ var DEVPATH = {
   js    : PROJECT_ROOT + DEV + 'assets/js/',
   devjs    : PROJECT_ROOT + DEV + 'assets/js/_devjs/',
   resource : PROJECT_ROOT + DEV + 'assets/resource/',
-}
+};
 
 var RELEASEPATH = {
   root : PROJECT_ROOT + RELEASE,
   css  : PROJECT_ROOT + RELEASE + 'assets/css/',
   js    : PROJECT_ROOT + RELEASE + 'assets/js/',
   resource : PROJECT_ROOT + RELEASE + 'assets/resource/',
-}
+};
 
 var OTHERPATH = {
   gulp : PROJECT_ROOT + BUILD + 'gulp/',
@@ -29,7 +30,7 @@ var OTHERPATH = {
   styleguide  : PROJECT_ROOT + '_styleguide/',
   jsDoc_src : PROJECT_ROOT + 'assets/js/',
   jsDoc_dist : PROJECT_ROOT + '_jsDoc/',
-}
+};
 
 var PATH = {
     root: PROJECT_ROOT,
