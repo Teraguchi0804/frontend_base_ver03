@@ -3,7 +3,7 @@ var PROJECT_ROOT = '../';
 
 var DEV = 'src/';
 
-var RELEASE = '../htdocs/project-name/';
+var RELEASE = '../htdocs/';
 
 var BUILD = 'build/';
 
