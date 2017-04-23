@@ -24,12 +24,8 @@ gulp.task("compileSCSS", ()=>{
 
     gulp.src([PATH.dev.scss + '**/*.scss','!' + PATH.dev.scss + '**/!*.scss'])
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
-        // .pipe(cache('css_log'))
-        // .pipe(scsslint({'maxBuffer': 100000,'config':'.scsslint.yml'}))
-        // .pipe(scsslint.failReporter())
         .pipe(sassGlob())
         .pipe(sass({outputStyle : 'expanded'}))
-        // .pipe(autoprefixer('last 2 version'))
         .pipe(autoprefixer({browsers: ['last 3 versions','iOS 7'],cascade: true}))
         .pipe(csscomb())
         .pipe(gulp.dest(PATH.dev.css));
