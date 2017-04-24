@@ -6,7 +6,7 @@
  * Author:
  */
 
-require('../libs/OrbitControls.js');
+require('../../libs/OrbitControls.js');
 
 'use strict';
 

@@ -56,11 +56,11 @@ export default class LoadMgr {
     if (gb.in.u.isPC) {
       var len = gb.in.conf.sec02ImgNum;
       gb.in.rm.total += len;　// load数のtotalを計算
-      var path = '/project-name/assets/resource/img/movie/bgImg/';
+      var path = '/assets/resource/img/movie/bgImg/';
     } else {
       var len = 19;
       gb.in.rm.total += len;　// load数のtotalを計算
-      var path = '/project-name/assets/resource/img/movie/bgImgSP/';
+      var path = '/assets/resource/img/movie/bgImgSP/';
     }
 
     var cb = ()=>{
@@ -124,12 +124,12 @@ export default class LoadMgr {
   section04ProductImg() {
 
     var textureList = [
-      '/project-name/assets/resource/img/product/tiffany_hand1.jpg',
-      '/project-name/assets/resource/img/product/brown.png',
-      '/project-name/assets/resource/img/product/blue.png',
-      '/project-name/assets/resource/img/product/white.png',
-      '/project-name/assets/resource/img/product/tiffanyblue.png',
-      '/project-name/assets/resource/img/product/pink.png',
+      '/assets/resource/img/product/tiffany_hand1.jpg',
+      '/assets/resource/img/product/brown.png',
+      '/assets/resource/img/product/blue.png',
+      '/assets/resource/img/product/white.png',
+      '/assets/resource/img/product/tiffanyblue.png',
+      '/assets/resource/img/product/pink.png',
     ];      
     this.textures = [];
 
@@ -175,7 +175,7 @@ export default class LoadMgr {
           ],
         urls: [
           'https://fonts.googleapis.com/css?family=Cormorant:500,500i|Roboto+Condensed'
-          // '/project-name/assets/css/font.css',
+          // '/assets/css/font.css',
           // 'https://fonts.googleapis.com/css?family=Roboto:400,500,300',
           // 'https://fonts.googleapis.com/css?family=Alegreya+Sans:400,100',
           // 'https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,300,100'

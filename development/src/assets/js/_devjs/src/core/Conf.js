@@ -6,7 +6,7 @@
  * Author:
  */
 
-import SoundData from './Data/Sound.js';
+// import SoundData from './Data/Sound.js';
 
 export default class Conf {
 
@@ -74,7 +74,7 @@ export default class Conf {
     // ------------------------------------------------------------
     //  sound data
     // ------------------------------------------------------------
-    this.soundData = new SoundData();
+    // this.soundData = new SoundData();
 
     // ------------------------------------------------------------
     //  sec02 bg Img Num

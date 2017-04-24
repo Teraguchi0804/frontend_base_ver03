@@ -3,12 +3,10 @@
 //  Display
 //
 //--------------------------------------------------
-// import Effects from './Effects/Effects.js';
-// import ScaleTop from '../Display/Layout/Size/ScaleTop.js';
 
 // import WebGLinit from './WebGLinit.js';
 
-import Canvas from "../Visual/Canvas";
+import Canvas from "../visual/Canvas";
 
 'use strict';
 
@@ -34,7 +32,7 @@ export default class DisplayTop {
       output: document.getElementById('webgl-output')
     });
 
-    gb.in.canvas.init();
+    // gb.in.canvas.init();
 
 
   }

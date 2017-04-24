@@ -6,7 +6,7 @@
  * Author:
  */
 
-import Entry from '../Entry.js';
+import Entry from '../core/Entry.js';
 // import Camera from './Utils/Camera.js';
 
 'use strict';

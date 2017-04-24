@@ -6,8 +6,8 @@
  * Author:
  */
 
-import Common from './Page/Common.js';
-import Main from './Page/Main.js';
+import Common from './page/Common.js';
+import Main from './page/Main.js';
 
 (()=>{
 
