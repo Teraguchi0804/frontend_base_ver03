@@ -5,10 +5,8 @@ import es2015 from 'babel-preset-es2015';
 import PATH from '../../config';
 
 gulp.task('babel', ()=>{
-  return gulp.src([PATH.dev.devjs + 'src/es6/**/*.es6'])
+  return gulp.src([PATH.dev.devjs])
     .pipe(plumber())
-    // .pipe(sourcemaps.init()) /* ソースマップを出力させる場合 */
     .pipe(babel({presets: [es2015]}))
-    // .pipe(sourcemaps.write(".")) /* ソースマップを出力させる場合 */
     .pipe(gulp.dest(PATH.dev.devjs));
 });

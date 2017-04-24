@@ -1,7 +1,6 @@
 import gulp from "gulp";
 import plumber from "gulp-plumber";
 import concat from 'gulp-concat';
-import strip_debug from 'gulp-strip-debug';
 import PATH from '../../config';
 
 // ------------------------------------------------------------
