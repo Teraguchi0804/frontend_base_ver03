@@ -1,16 +1,11 @@
 import gulp from "gulp";
 import sass from "gulp-sass";
 import minifyCSS from 'gulp-minify-css';
-import sourcemaps from 'gulp-sourcemaps';
 import csscomb from 'gulp-csscomb';
-import uglify from "gulp-uglify";
 import plumber from "gulp-plumber";
 import notify from "gulp-notify";
 import styledocco from 'gulp-styledocco';
 import autoprefixer from "gulp-autoprefixer";
-import scsslint from 'gulp-scss-lint';
-import cache from 'gulp-cached';
-import remember from 'gulp-remember';
 import sassGlob from 'gulp-sass-glob';
 import PATH from '../../config';
 
@@ -26,7 +21,7 @@ gulp.task("compileSCSS", ()=>{
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
         .pipe(sassGlob())
         .pipe(sass({outputStyle : 'expanded'}))
-        .pipe(autoprefixer({browsers: ['last 3 versions','iOS 7'],cascade: true}))
+        .pipe(autoprefixer({browsers: ['last 2 versions', 'iOS >= 8.1', 'Android >= 4.4'],cascade: true}))
         .pipe(csscomb())
         .pipe(gulp.dest(PATH.dev.css));
 
