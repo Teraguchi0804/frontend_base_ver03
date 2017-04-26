@@ -1,8 +1,10 @@
-//--------------------------------------------------
-//
-//  Display
-//
-//--------------------------------------------------
+/**
+ * fileOverview:
+ * Project:
+ * File: Display
+ * Date:
+ * Author:
+ */
 
 // import WebGLinit from './WebGLinit.js';
 
