@@ -212,7 +212,6 @@ export default class WebGLinit {
 
   static run() {
 
-
   }
 
   setEvents() {
