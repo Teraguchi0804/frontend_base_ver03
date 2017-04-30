@@ -32,30 +32,19 @@ export default class Common {
     gb.in.conf = new Conf();
     gb.in.u = new Util();
     gb.in.f = new Func();
-    // gb.in.up = new UpdateMgr();
-    // gb.in.r = new ResizeMgr();
-    // gb.in.s = new ScrollMgr();
-    // gb.in.m = new MouseMgr();
-    // gb.in.rm = new ReadyMgr();
-    // gb.in.loadMgr = new LoadMgr();
-    // gb.in.sct = new ScrollTransition();
+    
 
     // ------------------------------------------------------------
     //
     //  その他
     //
     // ------------------------------------------------------------
-    // pjaxの設定
-    // gb.in.pjax = new Pjax();
+
 
     // ------------------------------------------------------------
     //  Layout
     // ------------------------------------------------------------
     // gb.in.Layout = new Layout();
-
-
-    // 準備完了後の処理
-    // gb.in.rm.onCompletedFunc = ()=>{new DisplayOpening();}
 
   }
 
