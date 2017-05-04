@@ -6,7 +6,7 @@
  * Author:
  */
 
-import DisplayTop from '../Display/DisplayTop.js';
+import DisplayTop from '../Display/DisplayTop';
 
 'use strict';
 
