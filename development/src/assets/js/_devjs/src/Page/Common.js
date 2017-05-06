@@ -6,9 +6,9 @@
  * Author:
  */
 
-import Conf from '../core/Conf.js';
-import Util from '../mylibs/Util.js';
-import Func from '../mylibs/Func.js';
+import Conf from '../core/Conf';
+import Util from '../mylibs/Util';
+import Func from '../mylibs/Func';
 
 
 'use strict';
@@ -32,19 +32,6 @@ export default class Common {
     gb.in.conf = new Conf();
     gb.in.u = new Util();
     gb.in.f = new Func();
-    
-
-    // ------------------------------------------------------------
-    //
-    //  その他
-    //
-    // ------------------------------------------------------------
-
-
-    // ------------------------------------------------------------
-    //  Layout
-    // ------------------------------------------------------------
-    // gb.in.Layout = new Layout();
 
   }
 
