@@ -144,9 +144,14 @@ export default class Util {
 
   }
 
+	/**
+   * ラジアンを角度に変換
+	 * @param radians
+	 * @returns {number}
+	 */
   degree(radians) {
 
-    return radians * 180 / Math.PI; //1ラジアンが何度か
+    return radians * 180 / Math.PI;
 
   }
 
@@ -208,105 +213,6 @@ export default class Util {
     // if (value >= high) value = high;     
     // return value;
 
-  }
-
-  // ------------------------------------------------------------
-  //
-  //  Array
-  //
-  // ------------------------------------------------------------
-
-  // 配列内のランダムな値をひとつ取得
-  // -----------------------------------
-  // @arr : 配列
-  // return : 配列内の値
-  // -----------------------------------
-  arrRand(arr) {
-
-    return arr[this.random(0, arr.length - 1)];
-
-  }    
-    
-  // 配列をランダムに並べ替え
-  // -----------------------------------
-  // @arr : 配列(Array)
-  // -----------------------------------
-  shuffle(ary) {
-
-    var arr = [];
-    arr = ary.slice();
-    var i = arr.length;
-    while(i){
-      var j = Math.floor(Math.random()*i);
-      var t = arr[--i];
-      arr[i] = arr[j];
-      arr[j] = t;
-    }
-    return arr;
-
-  }
-
-  // ランダムな数値を作る
-  randomArr (len) {
-
-    var arr = new Array;
-
-    for (var i = 0; i < len; i++) arr.push(i);
-
-    arr = this.shuffleAry(arr);
-
-    return arr;
-
-  }
-
-  // nullを削除した配列を返す
-  // -----------------------------------
-  // @arr : 配列(Array)
-  // return : null削除した配列(Array)
-  // -----------------------------------
-  sliceNull(arr) {
-
-    var i, l, len1, newArr, val;
-    newArr = [];
-    for (i = l = 0, len1 = arr.length; l < len1; i = ++l) {
-      val = arr[i];
-      if (val !== null) {
-        newArr.push(val);
-      }
-    }
-    return newArr;
-
-  }    
-  
-  // 配列内のパラメータを比較してソート
-  // -----------------------------------
-  // @arr : 配列(Array)
-  // @para : パラメーター名
-  // @desc : 降順かどうか(boolean) デフォルトは昇順
-  // -----------------------------------
-  sort(arr, para, desc) {
-    if (desc === void 0) {
-      desc = false;
-    }
-    if (desc) {
-      return arr.sort(function(a, b) {
-        return b[para] - a[para];
-      });
-    } else {
-      return arr.sort(function(a, b) {
-        return a[para] - b[para];
-      });
-    }
-  }
-
-  getKey(list,value) {
-      var returnKey = [];
-      for(var key in list){
-          if (list[key] == value) {
-              returnKey.push(key);
-          }
-      }
-      return returnKey;
   }
 
   // ユニークIDを取得
