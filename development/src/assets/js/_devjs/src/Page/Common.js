@@ -17,18 +17,18 @@ export default class Common {
 
   constructor() {
 
-    this.onImmediate();
+    this.setup();
     this.setEvents();
 
   }
 
-  onImmediate() {
+	setup() {
 
-    // ------------------------------------------------------------
-    //  初期値の設定・データの配置
-    //  util関数の初期化
-    //  イベントマネージャーの設置
-    // ------------------------------------------------------------
+		/**
+     * @type {Conf} : 初期値の設定・データの配置
+		 * @type {Util} : Util関数の初期化
+		 * @type {Func} : イベントマネージャーの設置
+		 */
     gb.in.conf = new Conf();
     gb.in.u = new Util();
     gb.in.f = new Func();

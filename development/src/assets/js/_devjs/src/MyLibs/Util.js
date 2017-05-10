@@ -1,5 +1,5 @@
 /**
- * fileOverview:
+ * fileOverview: 便利関数クラス
  * Project:
  * File: Util
  * Date:
