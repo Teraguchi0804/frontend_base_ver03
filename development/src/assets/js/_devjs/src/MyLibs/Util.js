@@ -31,33 +31,31 @@ export default class Util {
 
   }
 
-  // ------------------------------------------------------------
-  //
-  //  Math
-  //
-  // ------------------------------------------------------------
+  /**
+   * Math
+   */
 
-  
-  // ランダムな整数を取得
-  // -----------------------------------
-  // @min : 最小値(int)
-  // @max : 最大値(int)
-  // return : minからmaxまでのランダムな整数(int)
-  // -----------------------------------
+
+  /**
+   * ランダムな値を返す
+   * @param min : 最小値(int)
+   * @param max : 最大値(int)
+   * @returns {number} : minからmaxまでのランダムな整数(int)
+   */
   random(min, max) {
 
     return Math.floor((Math.random() * ((max + 1) - min) + min));
 
   }
-      
-  // ランダムな整数を2つの範囲から取得
-  // -----------------------------------
-  // @min1 : 最小値1(int)
-  // @max1 : 最大値1(int)
-  // @min2 : 最小値2(int)
-  // @max2 : 最大値2(int)
-  // return : minからmaxまでのランダムな整数(int)
-  // -----------------------------------
+
+  /**
+   * ランダムな整数を2つの範囲から取得
+   * @param min1 : 最小値1(int)
+   * @param max1 : 最大値1(int)
+   * @param min2 : 最小値2(int)
+   * @param max2 : 最大値2(int)
+   * @returns {number} : minからmaxまでのランダムな整数(int)
+   */
   random2(min1, max1, min2, max2) {
     
     if (this.hit(2)) {
@@ -67,12 +65,12 @@ export default class Util {
     }
 
   }
-      
-  // 1/@rangeの確率でtrueを取得
-  // -----------------------------------
-  // @range : 母数(int)
-  // return : true or false(boolean)
-  // -----------------------------------
+
+  /**
+   * 1/@rangeの確率でtrueを取得
+   * @param range : 母数(int)
+   * @returns {boolean} : true or false(boolean)
+   */
   hit(range) {
 
     return this.random(0, range - 1) === 0;

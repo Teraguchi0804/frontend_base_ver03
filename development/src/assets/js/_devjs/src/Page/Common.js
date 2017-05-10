@@ -6,7 +6,7 @@
  * Author:
  */
 
-import Conf from '../core/Conf';
+import Conf from '../Core/Conf';
 import Util from '../mylibs/Util';
 import Func from '../mylibs/Func';
 
