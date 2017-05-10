@@ -28,6 +28,8 @@ export default class Main {
     //pageページ別のIDを取得
     var page = $('body').data('id');
 
+    window.console.log('現在のページIDは ', page);
+
 		//pageのIDごとに発火するクラスの振り分け
     switch (page) {
 
