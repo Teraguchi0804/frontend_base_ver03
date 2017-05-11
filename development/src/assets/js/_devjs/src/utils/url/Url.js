@@ -1,8 +1,10 @@
-// ------------------------------------------------------------
-//
-//  Url
-//
-// ------------------------------------------------------------
+/**
+ * fileOverview: urlから値取得、取得した値を操作する系
+ * Project:
+ * File: Url
+ * Date:
+ * Author:
+ */
 
 export default class Url {
 
@@ -10,7 +12,10 @@ export default class Url {
 
   }
 
-  // クエリ抜き出し
+  /**
+   * クエリ抜き出し
+   * @returns {*}
+   */
   getParam() {
 
     var url = location.href;
@@ -29,30 +34,42 @@ export default class Url {
     return list;
 
   }
-  
-  // ハッシュ取得
-  // -----------------------------------
-  // return : location.hashの#を削除したやつ
-  // -----------------------------------
+
+  /**
+   * ハッシュ取得 : location.hashの#を削除したやつを取得
+   * @returns {string}
+   */
   hash() {
 
     return location.hash.replace("#", "");
 
   }
 
+  /**
+   * getHash
+   * @returns {string}
+   */
   getHash () {
 
     return location.hash
 
   }
 
+  /**
+   * setHash
+   * @param text
+   */
   setHash (text) {
 
     location.hash = text;
 
   }
 
-  // 指定したstringがクッキーにセットされていたらtrue
+  /**
+   * checkCookie : 指定したstringがクッキーにセットされていたらtrue
+   * @param str
+   * @returns {*}
+   */
   checkCookie(str) {
 
     var flag = null;
@@ -64,6 +81,10 @@ export default class Url {
 
   }
 
+  /**
+   * setCookie
+   * @param str
+   */
   setCookie(str) {
 
     var date = new Date();
@@ -74,28 +95,40 @@ export default class Url {
 
   }
 
-  // ------------------------------------------------------------
-  //  host,protcol
-  // ------------------------------------------------------------
+  /**
+   * protcol
+   * @returns {string}
+   */
   protocol() {
 
     return location.protocol;
 
   }
-    
+
+  /**
+   * host
+   * @returns {string}
+   */
   host() {
 
     return location.hostname;
-    // return location.host
 
   }
 
+  /**
+   * port
+   * @returns {string}
+   */
   port() {
 
     return location.port;
 
   }
-        
+
+  /**
+   * path
+   * @returns {string}
+   */
   path() {
 
     return location.pathname;

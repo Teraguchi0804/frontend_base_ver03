@@ -1,14 +1,16 @@
 /**
- * zero padding : 桁数を調整
- * @param num
- * @param numDigits
- * @returns {string}
+ * preloadImg
+ * @param imgPath
+ * @returns {Promise}
  */
-export default (num, numDigits) => {
-  var i, j, ref;
-  num = '' + num;
-  for (i = j = 0, ref = numDigits; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
-    num = '0' + num;
-  }
-  return num.slice(-numDigits);
+export default (imgPath) => {
+  return new Promise(function(resolve) {
+    var img;
+    img = new Image();
+    img.addEventListener('load', function(e) {
+      img.removeEventListener('load', arguments.callee);
+      return resolve();
+    });
+    return img.src = imgPath;
+  });
 }
