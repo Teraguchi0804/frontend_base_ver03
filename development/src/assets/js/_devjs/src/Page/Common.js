@@ -10,7 +10,6 @@ import Conf from '../Core/Conf';
 import Util from '../mylibs/Util';
 import Func from '../mylibs/Func';
 
-
 'use strict';
 
 export default class Common {
