@@ -1,12 +1,13 @@
 @charset "utf-8";
 
 // common
-@import "../init/import";
-@import "../init/reset"; // リセットCSS、フォントサイズ
+@import "../common.scss";
+//@import "../init/import";
+//@import "../init/reset"; // リセットCSS、フォントサイズ
 
 // parts
-@import "../parts/_base/__base.scss"; //__baseを先に読み込む
-@import "../parts/**/_*.scss";
+//@import "../parts/_base/__base.scss"; //__baseを先に読み込む
+//@import "../parts/**/_*.scss";
 
 #top {
 
@@ -18,22 +19,127 @@
     //top: 0;
   }
 
+  #Effects01_wrap{
+    width: 600px;
+    height: 600px;
+    margin: 40px auto 0;
+    background-color: aquamarine;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    #obj01{
+      width: 28px;
+      height: 28px;
+      margin: 0 auto;
+      position: absolute;
+      top: 200px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 1.0;
+      .logo_img{
+        width: 28px;
+        height: 28px;
+        transform: rotate(45deg);
+      }
+    }
+
+    #obj02{
+      width: 517px;
+      margin: 0 auto;
+      position: absolute;
+      top: 170px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      opacity: 0.0;
+      transform: scale(0.95);
+
+      .textbox{
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+
+        .text01{
+          position: relative;
+          right: 0;
+        }
+        .text02{
+          position: relative;
+          left: 0;
+        }
+        .text03{
+          position: relative;
+          right: 0;
+        }
+        .text03{
+          position: relative;
+          left: 0;
+        }
+
+        .border{
+          margin: 0 auto;
+          background-color: #000;
+          height: 1px;
+        }
+
+        .border01{
+          width: 400px;
+          margin-bottom: 20px;
+
+        }
+        .border02{
+          width: 517px;
+          margin-bottom: 40px;
+
+        }
+        .border03{
+          width: 517px;
+          margin-top: 40px;
+          margin-bottom: 20px;
+        }
+        .border04{
+          width: 400px;
+          margin-bottom: 20px;
+        }
+        .border05{
+          width: 300px;
+        }
+      }
+    }
+
+    #obj03{
+      width: 235px;
+      height: 128px;
+      margin: -64px auto 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+
+      .inner{
+        .logo_img{
+          width: 28px;
+          height: 28px;
+          margin: 0 auto 40px;
+          transform: rotate(45deg);
+          opacity: 0.0;
+        }
+        .txt{
+          display: inline-block;
+          font-weight: bold;
+          font-size: 40px;
+          transform: rotate(45deg);
+          opacity: 0.0;
+        }
+      }
+
+    }
+
+  }
+
 }
-
-// contents01
-@import "./_section01/**/*.scss";
-
-// contents02
-@import "./_section02/**/*.scss";
-
-// contents03
-@import "./_section03/**/*.scss";
-
-// contents03_detail
-@import "./_section03_detail/**/*.scss";
-@import "./_section03_detail01/**/*.scss";
-@import "./_section03_detail02/**/*.scss";
-@import "./_section03_detail03/**/*.scss";
-
-// contents04
-@import "./_section04/**/*.scss";

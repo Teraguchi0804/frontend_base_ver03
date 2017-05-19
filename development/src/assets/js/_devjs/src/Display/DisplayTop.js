@@ -6,9 +6,7 @@
  * Author:
  */
 
-// import WebGLinit from './WebGLinit.js';
-
-import Canvas from "../visual/Canvas";
+import Effects_test01 from "./Effects/Effects_test01";
 
 'use strict';
 
@@ -30,18 +28,7 @@ export default class DisplayTop {
 
   onLoad() {
 
-    gb.in.canvas = new Canvas({
-      output: document.getElementById('webgl-output')
-    });
-
-    // gb.in.canvas.init();
-
-
-  }
-
-  static run() {
-
-		// window.console.log('static_Run');
+    // gb.in.eff01 = new Effects_test01();
 
   }
 
